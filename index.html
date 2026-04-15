@@ -2,71 +2,187 @@
 <html>
 <head>
   <title>Bharti Portfolio</title>
+
   <style>
     body {
-      font-family: Arial;
-      text-align: center;
-      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
       margin: 0;
+      font-family: Arial;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      text-align: center;
     }
 
-    nav {
+    nav ul {
+      display: inline-flex;
+      gap: 25px;
+      list-style: none;
       background: white;
-      padding: 10px;
-      border-radius: 20px;
-      margin: 20px auto;
-      width: fit-content;
+      padding: 12px 30px;
+      border-radius: 30px;
+      margin-top: 20px;
     }
 
-    nav a {
-      margin: 0 15px;
+    nav ul li a {
       text-decoration: none;
       color: black;
       font-weight: bold;
     }
 
-    .hero {
-      margin-top: 60px;
+    section {
+      margin-top: 80px;
+      padding: 20px;
     }
 
-    img {
+    .profile {
       width: 120px;
       border-radius: 50%;
+      border: 4px solid white;
     }
 
     h1 {
-      font-size: 28px;
+      font-size: 32px;
+      margin-top: 20px;
     }
 
-    p {
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .card {
+      background: white;
+      margin: 10px auto;
+      padding: 15px;
       width: 60%;
-      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: black;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
     }
   </style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <nav>
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Projects</a>
-  <a href="#">Skills</a>
-  <a href="#">Contact</a>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
 
-<div class="hero">
-  <img src="https://via.placeholder.com/120" alt="profile">
+<!-- HOME -->
+<section>
+  <img src="https://via.placeholder.com/120" class="profile">
 
-  <h1>
-    Hi, I'm Bharti Basumatary 👋  
-  </h1>
+  <h1>Hi, I'm Bharati Basumatary 👋</h1>
 
   <p>
-    QA Engineer with 5+ years of experience in Manual & Automation Testing.  
-    Skilled in Selenium, Java, TestNG, API Testing (Rest Assured), and Framework Development.
+<p>
+  QA Engineer with 5+ years of experience in Manual and Automation Testing across web-based applications.
+  Expertise in designing and executing test cases, identifying defects, and ensuring high-quality software delivery.
+  Skilled in Selenium WebDriver with Java, TestNG framework, and API Testing using Rest Assured.
+  Strong experience in building scalable automation frameworks using Page Object Model (POM) and integrating tests with CI/CD pipelines.
+  Passionate about improving test efficiency, ensuring application stability, and delivering reliable user experiences.
+</p>
   </p>
+
+  <a href="#" class="btn">Download Resume</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+   <div class="card">
+  I’m <b>Bharti Basumatary</b>, a dedicated <b>QA Engineer</b> with over <b>5+ years of experience</b> in Manual and Automation Testing. I am originally from <b>Assam</b> and hold a <b>Bachelor of Technology (B.Tech) in Computer Science</b> from <b>Dr. APJ Abdul Kalam Technical University, Lucknow</b>.
+
+  I have hands-on experience in testing web-based applications, including <b>functional testing</b>, <b>regression testing</b>, and <b>API validation</b>. I specialize in automation using <b>Selenium WebDriver with Java and TestNG</b>, and have built scalable automation frameworks using the <b>Page Object Model (POM)</b> approach.
+
+  My expertise also includes <b>API testing using Postman and Rest Assured</b>, where I validate response data, status codes, and different HTTP methods. I have worked in <b>Agile environments</b>, collaborating closely with developers and cross-functional teams to ensure high-quality deliverables.
+
+  With a strong focus on quality, I am passionate about identifying edge cases, improving test coverage, and continuously enhancing my skills to deliver reliable and efficient software solutions.
 </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <b>E-commerce Automation Framework</b><br>
+   Designed and implemented an automation framework using Selenium WebDriver, Java, and TestNG.
+  Applied Page Object Model (POM) for better maintainability and reusability.
+  Automated end-to-end user scenarios including login, product search, cart, and checkout flow.
+
+  </div>
+
+  <div class="card">
+    <b>API Testing Project</b><br>
+    Performed API testing using Rest Assured and Postman.
+  Validated response status codes, headers, and JSON responses.
+  Automated API test cases and integrated them into the testing workflow.
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="card">
+    <b>Automation Testing:</b> Selenium WebDriver, TestNG, Page Object Model (POM)
+  </div>
+
+  <div class="card">
+    <b>Programming & Backend:</b> Java, Spring, Spring Boot, Microservices Architecture
+  </div>
+
+  <div class="card">
+    <b>API Testing:</b> Postman, Rest Assured, API Validation
+  </div>
+
+  <div class="card">
+    <b>Tools & Technologies:</b> Git, Maven, Jenkins, CI/CD
+  </div>
+
+  <div class="card">
+    <b>Cloud & DevOps:</b> AWS (Basic), Docker (Basic)
+  </div>
+
+  <div class="card">
+    <b>Methodologies:</b> Agile, Scrum, SDLC, STLC
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    Email: bharatibasumatary61040@gmail.com <br>
+     <a href="https://www.linkedin.com/in/bharati-basumatary-9a39421b7/" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="30">
+  </a>
+
+  &nbsp;&nbsp;
+
+  <a href="https://github.com/bhartibasumatary61040" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="30">
+  </a>
+  </div>
+</section>
 
 </body>
 </html>
