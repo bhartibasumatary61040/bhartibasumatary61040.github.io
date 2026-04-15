@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bharati Portfolio</title>
+  <title>Bharti Portfolio</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial;
@@ -11,14 +18,19 @@
       text-align: center;
     }
 
+    /* NAVBAR */
+    nav {
+      position: sticky;
+      top: 10px;
+    }
+
     nav ul {
       display: inline-flex;
       gap: 25px;
       list-style: none;
-      background: white;
+      background: #f5f5f5;
       padding: 12px 30px;
       border-radius: 30px;
-      margin-top: 20px;
     }
 
     nav ul li a {
@@ -27,11 +39,13 @@
       font-weight: bold;
     }
 
+    /* SECTION */
     section {
-      margin-top: 80px;
-      padding: 20px;
+      min-height: 100vh;
+      padding: 100px 20px;
     }
 
+    /* PROFILE */
     .profile {
       width: 120px;
       border-radius: 50%;
@@ -40,31 +54,54 @@
 
     h1 {
       font-size: 32px;
+    }
+
+    /* HERO BUTTONS */
+    .hero-buttons {
       margin-top: 20px;
-    }
-
-    h2 {
-      margin-bottom: 10px;
-    }
-
-    .card {
-      background: white;
-      margin: 10px auto;
-      padding: 15px;
-      width: 60%;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
     }
 
     .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: black;
-      color: white;
+      padding: 12px 25px;
+      border-radius: 25px;
       text-decoration: none;
-      border-radius: 5px;
+      font-weight: bold;
     }
+
+    .primary {
+      background: #2c3e50;
+      color: white;
+    }
+
+    .secondary {
+      background: #eee;
+      color: black;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: #eee;
+      border-radius: 50%;
+      color: black;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    /* TEXT */
+    .content {
+      width: 60%;
+      margin: auto;
+      line-height: 1.6;
+    }
+
   </style>
 </head>
 
@@ -73,7 +110,7 @@
 <!-- NAVBAR -->
 <nav>
   <ul>
-    <li><a href="#">Home</a></li>
+    <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -82,33 +119,33 @@
 </nav>
 
 <!-- HOME -->
-<section id="about">
-  <h2>About Me</h2>
+<section id="home">
 
-  <div class="card">
-    I’m <b>Bharti Basumatary</b>, a dedicated <b>QA Engineer</b> with over <b>5+ years of experience</b> in Manual and Automation Testing. I am from <b>Assam</b> and hold a <b>B.Tech in Computer Science</b> from <b>Dr. APJ Abdul Kalam Technical University, Lucknow</b>.
+  <img src="profile.jpg" class="profile">
 
-    I specialize in Selenium WebDriver with Java, TestNG, and automation frameworks using Page Object Model (POM). I also have experience in API testing using Postman and Rest Assured.
+  <h1>
+    Hi, I'm Bharti Basumatary. I'm a QA Engineer with 5+ years of experience in Manual & Automation Testing.
+  </h1>
 
-    I have worked in Agile environments and focus on delivering high-quality, reliable software solutions.
-  </div>
+  <p>
+    Skilled in Selenium, Java, TestNG, and API Testing (Rest Assured).
+  </p>
 
-  <!-- 🔥 BUTTONS -->
   <div class="hero-buttons">
 
     <a href="#contact" class="btn primary">Contact me here →</a>
 
-    <a href="BharatiBasumatary_Automation.pdf" class="btn secondary" download>Download CV ⬇</a>
+    <a href="BharatiBasumatary_Automation.pdf" class="btn secondary" download>
+      Download CV ⬇
+    </a>
 
-     <a href="https://www.linkedin.com/in/bharati-basumatary-9a39421b7/" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="30">
-  </a>
+    <a href="https://www.linkedin.com/in/bharati-basumatary-9a39421b7/" target="_blank" class="icon">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
 
-  &nbsp;&nbsp;
-
-  <a href="https://github.com/bhartibasumatary61040" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="30">
-  </a>
+    <a href="https://github.com/bhartibasumatary61040" target="_blank" class="icon">
+      <i class="fab fa-github"></i>
+    </a>
 
   </div>
 
@@ -117,16 +154,15 @@
 <!-- ABOUT -->
 <section id="about">
   <h2>About Me</h2>
-  <div class="card">
-   <div class="card">
-  I’m <b>Bharti Basumatary</b>, a dedicated <b>QA Engineer</b> with over <b>5+ years of experience</b> in Manual and Automation Testing. I am originally from <b>Assam</b> and hold a <b>Bachelor of Technology (B.Tech) in Computer Science</b> from <b>Dr. APJ Abdul Kalam Technical University, Lucknow</b>.
 
-  I have hands-on experience in testing web-based applications, including <b>functional testing</b>, <b>regression testing</b>, and <b>API validation</b>. I specialize in automation using <b>Selenium WebDriver with Java and TestNG</b>, and have built scalable automation frameworks using the <b>Page Object Model (POM)</b> approach.
+  <div class="content">
+    I’m Bharti Basumatary, a QA Engineer with 5+ years of experience in Manual and Automation Testing.
+    I am from Assam and hold a B.Tech in Computer Science from Dr. APJ Abdul Kalam Technical University, Lucknow.
 
-  My expertise also includes <b>API testing using Postman and Rest Assured</b>, where I validate response data, status codes, and different HTTP methods. I have worked in <b>Agile environments</b>, collaborating closely with developers and cross-functional teams to ensure high-quality deliverables.
+    I have hands-on experience in functional testing, regression testing, and API validation.
+    I specialize in Selenium WebDriver with Java and TestNG and have built automation frameworks using POM.
 
-  With a strong focus on quality, I am passionate about identifying edge cases, improving test coverage, and continuously enhancing my skills to deliver reliable and efficient software solutions.
-</div>
+    I also have experience in API testing using Postman and Rest Assured and have worked in Agile environments.
   </div>
 </section>
 
@@ -134,19 +170,14 @@
 <section id="projects">
   <h2>Projects</h2>
 
-  <div class="card">
+  <div class="content">
     <b>E-commerce Automation Framework</b><br>
-   Designed and implemented an automation framework using Selenium WebDriver, Java, and TestNG.
-  Applied Page Object Model (POM) for better maintainability and reusability.
-  Automated end-to-end user scenarios including login, product search, cart, and checkout flow.
+    Built using Selenium WebDriver, Java, and TestNG with Page Object Model (POM).
+    Automated end-to-end scenarios like login, search, cart, and checkout.<br><br>
 
-  </div>
-
-  <div class="card">
     <b>API Testing Project</b><br>
     Performed API testing using Rest Assured and Postman.
-  Validated response status codes, headers, and JSON responses.
-  Automated API test cases and integrated them into the testing workflow.
+    Validated response status codes, headers, and JSON responses.
   </div>
 
 </section>
@@ -155,46 +186,45 @@
 <section id="skills">
   <h2>Skills</h2>
 
-  <div class="card">
-    <b>Automation Testing:</b> Selenium WebDriver, TestNG, Page Object Model (POM)
-  </div>
+  <div class="content">
 
-  <div class="card">
-    <b>Programming & Backend:</b> Java, Spring, Spring Boot, Microservices Architecture
-  </div>
+    <b>Automation Testing:</b><br>
+    Selenium WebDriver, TestNG, Page Object Model (POM), Data-Driven Framework<br><br>
 
-  <div class="card">
-    <b>API Testing:</b> Postman, Rest Assured, API Validation
-  </div>
+    <b>Programming & Backend:</b><br>
+    Java, Spring, Spring Boot, Microservices Architecture<br><br>
 
-  <div class="card">
-    <b>Tools & Technologies:</b> Git, Maven, Jenkins, CI/CD
-  </div>
+    <b>API Testing:</b><br>
+    Postman, Rest Assured, API Validation, JSON Parsing<br><br>
 
-  <div class="card">
-    <b>Cloud & DevOps:</b> AWS (Basic), Docker (Basic)
-  </div>
+    <b>Tools & Technologies:</b><br>
+    Git, GitHub, Maven, Jenkins, CI/CD<br><br>
 
-  <div class="card">
-    <b>Methodologies:</b> Agile, Scrum, SDLC, STLC
-  </div>
+    <b>Database:</b><br>
+    SQL, MySQL (Basic Queries, Joins, Validation)<br><br>
 
+    <b>Cloud & DevOps:</b><br>
+    AWS (Basic), Docker (Basic)<br><br>
+
+    <b>Methodologies:</b><br>
+    Agile, Scrum, SDLC, STLC, Defect Life Cycle
+
+  </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
-  <div class="card">
-    Email: bharatibasumatary61040@gmail.com <br>
-     <a href="https://www.linkedin.com/in/bharati-basumatary-9a39421b7/" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="30">
-  </a>
 
-  &nbsp;&nbsp;
+  <div class="content">
+    Email: bharatibasumatary61040@gmail.com <br><br>
+   <a href="https://www.linkedin.com/in/bharati-basumatary-9a39421b7/" target="_blank" class="icon">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
 
-  <a href="https://github.com/bhartibasumatary61040" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="30">
-  </a>
+    <a href="https://github.com/bhartibasumatary61040" target="_blank" class="icon">
+      <i class="fab fa-github"></i>
+    </a>
   </div>
 </section>
 
