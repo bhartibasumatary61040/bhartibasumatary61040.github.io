@@ -7,30 +7,29 @@
 
 <style>
 
-/* 🌸 BACKGROUND */
+/* RESET */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(120deg, #fde7f3, #f3e8ff, #e0f2fe);
+  background: linear-gradient(to right, #eef2ff, #f8fafc);
 }
 
 /* NAVBAR */
 nav {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   padding: 20px;
 }
 
 nav ul {
-  display: flex;
-  gap: 25px;
   list-style: none;
+  display: inline-flex;
+  gap: 20px;
   background: white;
   padding: 10px 25px;
   border-radius: 30px;
 }
 
-nav ul li a {
+nav a {
   text-decoration: none;
   color: black;
   font-weight: 500;
@@ -42,96 +41,72 @@ section {
   text-align: center;
 }
 
-/* HERO */
+/* HOME */
 #home {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding-top: 40px; /* gap fix */
 }
 
-.profile {
-  width: 120px;
-  border-radius: 50%;
-  margin-bottom: 20px;
+#home h1 {
+  font-size: 34px;
+  line-height: 1.6;
 }
 
-h1 {
-  font-size: 32px;
-  max-width: 800px;
-  margin: auto;
-  line-height: 1.5;
-}
-
-.subtext {
-  margin-top: 10px;
-  color: #555;
-}
-
-/* BUTTONS */
-.hero-buttons {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.btn {
-  padding: 12px 22px;
-  border-radius: 25px;
-  text-decoration: none;
+#home span {
   font-weight: bold;
-}
-
-.primary {
-  background: #1f2937;
-  color: white;
-}
-
-.secondary {
-  background: #e5e7eb;
-  color: black;
-}
-
-/* ICONS */
-.icon img {
-  width: 22px;
 }
 
 /* ABOUT */
-.about-container {
-  max-width: 800px;
+#about p {
+  max-width: 600px;
   margin: auto;
-  text-align: left;
-  line-height: 1.7;
+  color: #555;
+  line-height: 1.6;
 }
 
-.about-container p {
-  margin-bottom: 20px;
-}
-
-/* PROJECTS */
-.project {
-  margin-bottom: 30px;
+/* PROJECT */
+.card {
+  max-width: 500px;
+  margin: 20px auto;
 }
 
 /* SKILLS */
-.skills {
-  max-width: 700px;
+.skills-box {
+  max-width: 600px;
   margin: auto;
   text-align: left;
-}
-
-.skills p {
-  margin: 10px 0;
+  line-height: 1.8;
 }
 
 /* CONTACT */
-#contact a {
-  text-decoration: none;
-  color: #1f2937;
-  font-weight: bold;
+.contact-text {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* INPUT */
+.contact-form input {
+  border: 1px solid #ddd;
+}
+
+/* TEXTAREA */
+.contact-form textarea {
+  border: 2px solid #111;
+  height: 160px;
+  resize: none;
 }
 
 </style>
@@ -152,45 +127,17 @@ h1 {
 
 <!-- HOME -->
 <section id="home">
-
-  <img src="https://via.placeholder.com/120" class="profile">
-
   <h1>
-    Hi, I'm <b>Bharti Basumatary</b>. <br>
-    I'm a QA Engineer with <br>
-    <b>5+ years of experience</b> in Manual & Automation Testing.
+    Hi, I'm <b>Bharti Basumatary</b>.<br>
+    I'm a QA Engineer with<br>
+    <span>5+ years of experience</span> in Manual & Automation Testing.
   </h1>
-
-  <p class="subtext">
-    Skilled in Selenium, Java, TestNG, and API Testing (Rest Assured).
-  </p>
-
-  <div class="hero-buttons">
-    <a href="#contact" class="btn primary">Contact me here →</a>
-
-    <a href="BharatiBasumatary_Automation.pdf" class="btn secondary" download>
-      Download CV ↓
-    </a>
-
-    <a href="https://www.linkedin.com/in/bharati-basumatary-9a39421b7/" target="_blank" class="icon">
-      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
-    </a>
-
-    <a href="https://github.com/bhartibasumatary61040" target="_blank" class="icon">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png">
-    </a>
-  </div>
-
 </section>
 
 <!-- ABOUT -->
 <section id="about">
-
   <h2>About Me</h2>
-
-  <div class="about-container">
-
-    <p>
+   <p>
       I’m <b>Bharti Basumatary</b>, a dedicated <b>QA Engineer</b> with over 
       <b>5+ years of experience</b> in Manual and Automation Testing. I am from 
       <b>Assam</b> and hold a <b>B.Tech in Computer Science</b> from 
@@ -207,29 +154,24 @@ h1 {
       I also have experience in <b>API testing using Postman and Rest Assured</b>, 
       validating responses, status codes, and HTTP methods. I have worked in 
       <b>Agile environments</b>, collaborating with teams to ensure high-quality delivery.
-    </p>
-
-  </div>
-
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-
   <h2>Projects</h2>
 
-  <div class="project">
+  <div class="card">
     <h3>E-commerce Automation Framework</h3>
     <p>
-      Built using Selenium WebDriver, Java, and TestNG with Page Object Model (POM).
-      Automated end-to-end scenarios like login, product search, cart, and checkout.
+      Built using Selenium WebDriver, Java, and TestNG with Page Object Model.
+      Automated login, product search, cart, and checkout flow.
     </p>
   </div>
 
-  <div class="project">
+  <div class="card">
     <h3>API Testing Project</h3>
     <p>
-      Performed API testing using Rest Assured and Postman. 
+      Performed API testing using Rest Assured and Postman.
       Validated response status codes, headers, and JSON responses.
     </p>
   </div>
@@ -238,11 +180,10 @@ h1 {
 
 <!-- SKILLS -->
 <section id="skills">
-
   <h2>Skills</h2>
 
-  <div class="skills">
-    <p><b>Automation Testing:</b> Selenium WebDriver, TestNG, Page Object Model</p>
+  <div class="skills-box">
+    <p><b>Automation Testing:</b> Selenium WebDriver, TestNG, POM</p>
     <p><b>Programming:</b> Java, Spring Boot, Microservices</p>
     <p><b>API Testing:</b> Postman, Rest Assured</p>
     <p><b>Tools:</b> Git, Maven, Jenkins, CI/CD</p>
@@ -253,23 +194,18 @@ h1 {
 
 <!-- CONTACT -->
 <section id="contact">
-
   <h2>Contact Me</h2>
 
   <p class="contact-text">
     Please contact me directly at 
     <a href="mailto:bharatibasumatary61040@gmail.com">
       bharatibasumatary61040@gmail.com
-    </a> 
-    or through this form.
+    </a>
   </p>
 
   <form class="contact-form">
-
-    <input type="email" placeholder="Your email" required>
-
-    <textarea placeholder="Your message" rows="6" required></textarea>
-
+    <input type="email" placeholder="Your email">
+    <textarea placeholder="Your message"></textarea>
   </form>
 
 </section>
