@@ -129,17 +129,15 @@ section {
   margin-top: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;   /* IMPORTANT */
   gap: 15px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;     /* IMPORTANT - same line */
 }
 
-.btn {
-  padding: 12px 25px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  transition: 0.3s;
+/* icons ko bhi same line me lao */
+.social-icons {
+  display: flex;
+  gap: 10px;
 }
 
 /* BLACK BUTTON */
@@ -189,19 +187,19 @@ section {
     Contact me here →
   </a>
 
-  <a href="BharatiBasumatary_Automation.pdf" class="btn secondary" download>
+  <a href="BharatiBasumatary_Automation.pdf" class="btn outline" download>
     Download CV ↓
   </a>
 
-   </a>
-
-    <a href="https://www.linkedin.com/in/bharati-basumatary-9a39421b7/" target="_blank" class="icon">
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/bharati-basumatary-9a39421b7/" target="_blank">
       <i class="fab fa-linkedin-in"></i>
     </a>
 
-    <a href="https://github.com/bhartibasumatary61040" target="_blank" class="icon">
+    <a href="https://github.com/bhartibasumatary61040" target="_blank">
       <i class="fab fa-github"></i>
     </a>
+  </div>
 
 </div>
 
