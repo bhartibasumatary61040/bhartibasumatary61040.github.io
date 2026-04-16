@@ -170,37 +170,30 @@ section {
   border: 1px solid #e2e8f0;
   display: inline-block;
 }
-/* ================= TITLE ================= */
-.section-title {
-  text-align: center;
-  font-size: 32px;
-  margin: 50px 0;
-}
-
-/* ================= TIMELINE ================= */
+/* Timeline */
 .timeline {
   position: relative;
   width: 80%;
   margin: auto;
 }
 
-/* Center vertical line */
+/* Center line */
 .timeline::after {
   content: '';
   position: absolute;
   width: 2px;
-  background: #e0e0e0;
+  background: #ddd;
   top: 0;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* Timeline item */
+/* Item */
 .timeline-item {
   position: relative;
   width: 50%;
-  padding: 20px 60px;
+  padding: 40px 50px;
 }
 
 /* LEFT */
@@ -214,81 +207,41 @@ section {
   left: 50%;
 }
 
-/* ================= CONTENT BOX ================= */
+/* Content */
 .timeline-content {
   background: #f9fafc;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-  transition: 0.3s;
+  border-radius: 10px;
 }
 
-.timeline-content:hover {
-  transform: translateY(-5px);
-}
-
-/* ================= ICON (CENTER CIRCLE) ================= */
-.timeline-icon {
+/* CENTER BLOCK (icon + date together) */
+.timeline-center {
   position: absolute;
   top: 20px;
   left: 50%;
-  transform: translate(-50%, 0);
-  background: #fff;
-  border: 2px solid #ddd;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+/* ICON */
+.timeline-icon {
   width: 40px;
   height: 40px;
+  background: white;
+  border: 2px solid #ddd;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
 }
 
-/* ================= DATE ================= */
+/* DATE */
 .timeline-date {
-  position: absolute;
-  top: 25px;
-  font-size: 14px;
-  color: #777;
-}
+  margin-top: 5px;
+  font-size: 13px;
+  color: gray;
 
-/* LEFT date */
-.timeline-item.left .timeline-date {
-  right: -130px;
-}
-
-/* RIGHT date */
-.timeline-item.right .timeline-date {
-  left: -130px;
-}
-
-/* ================= RESPONSIVE ================= */
-@media screen and (max-width: 768px) {
-
-  .timeline::after {
-    left: 20px;
-  }
-
-  .timeline-item {
-    width: 100%;
-    padding-left: 60px;
-    padding-right: 20px;
-    text-align: left;
-  }
-
-  .timeline-item.right {
-    left: 0;
-  }
-
-  .timeline-icon {
-    left: 20px;
-    transform: none;
-  }
-
-  .timeline-date {
-    position: relative;
-    left: 0;
-    margin-top: 10px;
-  }
 }
 /* CONTACT */
 .contact-text {
