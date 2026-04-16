@@ -92,10 +92,14 @@ section {
 }
 
 .project-card img {
-  width: 220px;
-  height: 150px;
+  width: 45%;   /* bada ho gaya */
+  height: 220px; /* fixed height (clean look) */
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 12px;
+  transition: 0.4s ease;
+}
+  .project-card:hover img {
+  transform: scale(1.08);
 }
 
 .tags span {
