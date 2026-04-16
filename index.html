@@ -192,7 +192,7 @@ section {
   margin: auto;
 }
 
-/* Center Line */
+/* Center line */
 .timeline::after {
   content: '';
   position: absolute;
@@ -232,13 +232,18 @@ section {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* Center Block */
+/* Remove dots */
+.timeline-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Center block */
 .timeline-center {
   position: absolute;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  text-align: center;
 }
 
 /* Icon */
@@ -251,16 +256,25 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
 }
 
 /* Date */
 .timeline-date {
-  margin-top: 5px;
+  position: absolute;
+  top: 25px;
   font-size: 13px;
   color: gray;
 }
 
+/* LEFT → date right side */
+.timeline-item.left .timeline-date {
+  right: -120px;
+}
+
+/* RIGHT → date left side */
+.timeline-item.right .timeline-date {
+  left: -120px;
+}
 }
 /* CONTACT */
 .contact-text {
@@ -669,44 +683,47 @@ order processing and payment gateway integration.
 
   </div>
 
-</section>
-    <div class="timeline">
+<section id="experience">
+  <h2 class="section-title">My Experience</h2>
 
-  <!-- LEFT -->
-  <div class="timeline-item left">
-    <div class="timeline-content">
-      <h3>B.Tech (Computer Science)</h3>
-      <h4>Dr. A.P.J. Abdul Kalam Technical University, Lucknow</h4>
-      <p>Built strong foundation in software development and problem-solving.</p>
-    </div>
+  <div class="timeline">
 
-    <div class="timeline-center">
-      <div class="timeline-icon">🎓</div>
+    <!-- LEFT -->
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <h3>B.Tech (Computer Science)</h3>
+        <h4>Dr. A.P.J. Abdul Kalam Technical University, Lucknow</h4>
+        <p>Built strong foundation in software development and problem-solving.</p>
+      </div>
+
+      <div class="timeline-center">
+        <div class="timeline-icon">🎓</div>
+      </div>
+
       <div class="timeline-date">2016 - 2020</div>
     </div>
-  </div>
 
-  <!-- RIGHT -->
-  <div class="timeline-item right">
-    <div class="timeline-content">
-      <h3>Software Test Engineer</h3>
-      <h4>Brain Vision Technology</h4>
+    <!-- RIGHT -->
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <h3>Software Test Engineer</h3>
+        <h4>Brain Vision Technology</h4>
 
-      <ul>
-        <li>Designed test plans and test cases</li>
-        <li>Built hybrid automation framework</li>
-        <li>Worked on Selenium, TestNG, Jenkins</li>
-      </ul>
-    </div>
+        <ul>
+          <li>Designed test plans and test cases</li>
+          <li>Built hybrid automation framework</li>
+          <li>Worked on Selenium, TestNG, Jenkins</li>
+        </ul>
+      </div>
 
-    <div class="timeline-center">
-      <div class="timeline-icon">💼</div>
+      <div class="timeline-center">
+        <div class="timeline-icon">💼</div>
+      </div>
+
       <div class="timeline-date">2024 - Present</div>
     </div>
+
   </div>
-
-</div>
-
 <!-- LEFT (Company 2) -->
 <div class="timeline-item left">
   <div class="content">
@@ -759,6 +776,7 @@ order processing and payment gateway integration.
    <div class="timeline-icon">💼</div>
   <div class="date">2020 - 2020</div>
 </div>
+</section>
 
 <!-- CONTACT -->
 <section id="contact">
