@@ -232,6 +232,26 @@ section {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
+/* 🔥 ADD THIS (MAIN FIX) */
+.timeline-item.left .timeline-content {
+  margin-left: auto;
+}
+
+.timeline-item.right .timeline-content {
+  margin-right: auto;
+}
+
+/* 🔥 REMOVE BULLETS */
+.timeline-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.timeline-content li {
+  margin-bottom: 6px;
+}
+
 /* Center icon */
 .timeline-icon {
   position: absolute;
@@ -259,12 +279,12 @@ section {
 
 /* LEFT date */
 .timeline-item.left .timeline-date {
-  right: -140px;
+  right: -120px; /* 🔥 thoda adjust */
 }
 
 /* RIGHT date */
 .timeline-item.right .timeline-date {
-  left: -140px;
+  left: -120px;
 }
 /* CONTACT */
 .contact-text {
@@ -731,7 +751,7 @@ order processing and payment gateway integration.
       </ul>
     </div>
 
-    <span class="timeline-date">September 2023 - November 2023</span>
+    <span class="timeline-date">Sep2023 - Nov2023</span>
     <div class="timeline-icon">💼</div>
   </div>
 
@@ -770,7 +790,7 @@ order processing and payment gateway integration.
       </ul>
     </div>
 
-    <span class="timeline-date">September2020 - jun 2022</span>
+    <span class="timeline-date">Sep2020 - jun 2022</span>
     <div class="timeline-icon">💼</div>
   </div>
 
