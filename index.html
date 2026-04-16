@@ -183,18 +183,11 @@ section {
 }
 /* ================= EXPERIENCE ================= */
 
-.section-title {
-  text-align: center;
-  font-size: 32px;
-  margin: 40px 0;
-}
-
-/* Timeline */
 .timeline {
   position: relative;
   width: 80%;
   margin: auto;
-  padding: 20px 0; /* 🔥 ADD */
+  padding: 40px 0;
 }
 
 /* Center line */
@@ -202,68 +195,53 @@ section {
   content: '';
   position: absolute;
   width: 2px;
-  background: #ddd;
+  background: #e5e7eb;
   top: 0;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* Item */
+/* Timeline item */
 .timeline-item {
   position: relative;
   width: 50%;
-  padding: 20px 30px;
+  padding: 20px;
   box-sizing: border-box;
-  margin: 30px 0; /* 🔥 equal spacing */
-  display: flex; /* 🔥 ADD */
-  flex-direction: column; /* 🔥 ADD */
 }
 
 /* LEFT */
 .timeline-item.left {
   left: 0;
-  text-align: left;
-  align-items: flex-end; /* 🔥 FIX alignment */
+  text-align: right;
 }
 
 /* RIGHT */
 .timeline-item.right {
   left: 50%;
   text-align: left;
-  align-items: flex-start; /* 🔥 FIX alignment */
 }
 
-/* Content */
+/* Content box */
 .timeline-content {
-  background: #f9fafc;
-  padding: 15px;
-  border-radius: 10px;
-  width: 100%; /* 🔥 FIX (max-width hata diya) */
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  display: inline-block;
+  max-width: 90%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* Remove dots */
-.timeline-content ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-/* Center block */
-.timeline-center {
-  position: absolute;
-  top: 20px;
-  left: 100%; /* 🔥 FIX */
-  transform: translateX(-50%);
-}
-
-/* Icon */
+/* Center icon */
 .timeline-icon {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 35px;
   height: 35px;
   background: white;
-  border: 2px solid #ddd;
+  border: 2px solid #e5e7eb;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -273,22 +251,21 @@ section {
 /* Date */
 .timeline-date {
   position: absolute;
-  top: 25px;
+  top: 30px;
   font-size: 13px;
   color: gray;
   white-space: nowrap;
 }
 
-/* LEFT → date right side */
+/* LEFT date */
 .timeline-item.left .timeline-date {
-  right: -90px; /* 🔥 thoda aur better */
+  right: -140px;
 }
 
-/* RIGHT → date left side */
+/* RIGHT date */
 .timeline-item.right .timeline-date {
-  left: -90px;
+  left: -140px;
 }
-
 /* CONTACT */
 .contact-text {
   color: #555;
@@ -733,75 +710,70 @@ order processing and payment gateway integration.
         <div class="timeline-icon">💼</div>
       </div>
 
-      <div class="timeline-date">2024 - Present</div>
+      <div class="timeline-date">March 2024 - Present</div>
     </div>
 
   </div>
 <!-- LEFT (Company 2) -->
-<div class="timeline-item left">
-  <div class="timeline-content">
-    <h3>Software Engineer</h3>
-    <h4>Innominds Software</h4>
+<div class="timeline">
 
-    <ul>
-      <li>Developed automation scripts using Selenium WebDriver with Java and TestNG</li>
-      <li>Tested real-time payment systems to ensure seamless workflows</li>
-      <li>Designed end-to-end test cases for billing and payment processes</li>
-      <li>Validated transactions and billing data using SQL</li>
-      <li>Analyzed test results and generated reports for production readiness</li>
-    </ul>
-  </div>
+  <!-- LEFT -->
+  <div class="timeline-item left">
+    <div class="timeline-content">
+      <h3>Software Engineer</h3>
+      <h4>Innominds Software</h4>
+      <ul>
+        <li>Developed automation scripts using Selenium WebDriver with Java and TestNG</li>
+        <li>Tested real-time payment systems to ensure seamless workflows</li>
+        <li>Designed end-to-end test cases for billing and payment processes</li>
+        <li>Validated transactions and billing data using SQL</li>
+        <li>Analyzed test results and generated reports for production readiness</li>
+      </ul>
+    </div>
 
-  <div class="timeline-center">
+    <span class="timeline-date">September 2023 - November 2023</span>
     <div class="timeline-icon">💼</div>
   </div>
 
-  <div class="timeline-date">Sep 2023 - Nov 2023</div>
-</div>
 
-<!-- RIGHT (Company 3) -->
-<div class="timeline-item right">
-  <div class="timeline-content">
-    <h3>Software Engineer</h3>
-    <h4>Cybage Software</h4>
+  <!-- RIGHT -->
+  <div class="timeline-item right">
+    <div class="timeline-content">
+      <h3>Software Engineer</h3>
+      <h4>Cybage Software</h4>
+      <ul>
+        <li>Built automation solutions using Selenium WebDriver (Java)</li>
+        <li>Performed API validation using Postman</li>
+        <li>Executed functional, regression, and integration testing</li>
+        <li>Validated data accuracy using SQL queries</li>
+        <li>Logged and tracked defects using JIRA</li>
+        <li>Worked in Agile Scrum teams for quality delivery</li>
+      </ul>
+    </div>
 
-    <ul>
-      <li>Built automation solutions using Selenium WebDriver (Java)</li>
-      <li>Performed API validation using Postman</li>
-      <li>Executed functional, regression, and integration testing</li>
-      <li>Validated data accuracy using SQL queries</li>
-      <li>Logged and tracked defects using JIRA</li>
-      <li>Worked in Agile Scrum teams for quality delivery</li>
-    </ul>
-  </div>
-
-  <div class="timeline-center">
+    <span class="timeline-date">July 2022 - June 2023</span>
     <div class="timeline-icon">💼</div>
   </div>
 
-  <div class="timeline-date">July 2022 - June 2023</div>
-</div>
 
-<!-- LEFT (Company 4) -->
-<div class="timeline-item left">
-  <div class="timeline-content">
-    <h3>Software Engineer</h3>
-    <h4>Web Minds IT Solution</h4>
+  <!-- LEFT -->
+  <div class="timeline-item left">
+    <div class="timeline-content">
+      <h3>Software Engineer</h3>
+      <h4>Web Minds IT Solution</h4>
+      <ul>
+        <li>Designed and executed manual test cases for web applications</li>
+        <li>Validated end-to-end workflows including authentication and submission</li>
+        <li>Enhanced application security and data integrity</li>
+        <li>Performed functional and regression testing</li>
+        <li>Tracked defects using JIRA and ensured timely resolution</li>
+      </ul>
+    </div>
 
-    <ul>
-      <li>Designed and executed manual test cases for web applications</li>
-      <li>Validated end-to-end workflows including authentication and submission</li>
-      <li>Enhanced application security and data integrity</li>
-      <li>Performed functional and regression testing</li>
-      <li>Tracked defects using JIRA and ensured timely resolution</li>
-    </ul>
-  </div>
-
-  <div class="timeline-center">
+    <span class="timeline-date">September2020 - jun 2022</span>
     <div class="timeline-icon">💼</div>
   </div>
 
-  <div class="timeline-date">2020 - 2022</div>
 </div>
 </section>
 
