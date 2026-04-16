@@ -160,31 +160,27 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px; /* 🔥 slightly tight spacing */
+  gap: 12px;
 }
 
-/* Skill pill */
+/* Skill */
 .skill {
-  padding: 8px 16px; /* 🔥 compact */
-  background: #f8fafc; /* very light */
-  border-radius: 12px; /* 🔥 less round (important) */
+  padding: 8px 16px;
+  background: #f8fafc;
+  border-radius: 12px;
   font-size: 14px;
   border: 1px solid #e2e8f0;
   display: inline-block;
-
-  /* ❌ REMOVE heavy effects */
-  box-shadow: none;
-  transition: none;
-  cursor: default;
 }
 
-/* ❌ REMOVE HOVER (image me nahi hai) */
-/*
-.skill:hover {
-  background: #000;
-  color: #fff;
+/* 🔥 REMOVE ANY EXTRA BOX */
+.skills-box,
+#skills > div {
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
 }
-*/
 /* ================= EXPERIENCE ================= */
 
 .timeline {
@@ -656,6 +652,7 @@ order processing and payment gateway integration.
 
 </a>
   </section>
+
 <!-- SKILLS -->
 <section id="skills">
 
@@ -673,25 +670,30 @@ order processing and payment gateway integration.
     <!-- Manual Testing -->
     <span class="skill">Manual Testing</span>
     <span class="skill">Functional Testing</span>
-    <span class="skill">Regression Testing<section id="skills">
+    <span class="skill">Regression Testing</span>
 
+    <!-- Process -->
     <span class="skill">Software Testing Life Cycle (STLC)</span>
     <span class="skill">Software Development Life Cycle (SDLC)</span>
     <span class="skill">Defect Life Cycle</span>
     <span class="skill">Smoke Testing</span>
-      
+
+    <!-- API -->
     <span class="skill">API Testing</span>
     <span class="skill">Postman</span>
     <span class="skill">Rest Assured</span>
 
+    <!-- Backend -->
     <span class="skill">Java</span>
     <span class="skill">Spring Boot</span>
     <span class="skill">Microservices</span>
 
+    <!-- Tools -->
     <span class="skill">Git</span>
     <span class="skill">Maven</span>
     <span class="skill">Jenkins</span>
 
+    <!-- Database & Others -->
     <span class="skill">MySQL</span>
     <span class="skill">AWS</span>
     <span class="skill">Agile</span>
@@ -699,6 +701,7 @@ order processing and payment gateway integration.
 
   </div>
 
+</section>
 <section id="experience">
   <h2 class="section-title">My Experience</h2>
 
