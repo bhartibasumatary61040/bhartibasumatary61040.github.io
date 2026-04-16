@@ -363,7 +363,30 @@ section {
   border: 1px solid #ddd;
   color: black;
 }
+.top-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
 
+/* 🔥 SAME BUTTON STYLE */
+.btn {
+  padding: 8px 18px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #000;
+  background: #fff;
+  transition: 0.3s;
+}
+
+/* Hover */
+.btn:hover {
+  background: #000;
+  color: #fff;
+}
 /* HOVER EFFECT */
 .btn:hover {
   transform: translateY(-2px);
@@ -393,21 +416,16 @@ section {
     <span>5+ years of experience</span> in Manual & Automation Testing.
   </h1>
 </section>
-  <div class="hero-buttons">
+ <div class="top-buttons">
 
-  <a href="#contact" class="btn primary">
-    Contact me here →
-  </a>
+  <a href="#contact" class="btn">Contact Me</a>
 
-  <a href="BharatiBasumatary_Automation.pdf" class="btn outline" download>
-    Download CV ↓
-  </a>
+  <a href="your-cv.pdf" download class="btn">Download CV</a>
 
   <div class="social-icons">
-    <a href="https://www.linkedin.com/in/bharati-basumatary-9a39421b7/" target="_blank">
+    <a href="https://www.linkedin.com/in/bharati-basumatary-9a39421b7" target="_blank">
       <i class="fab fa-linkedin-in"></i>
     </a>
-
     <a href="https://github.com/bhartibasumatary61040" target="_blank">
       <i class="fab fa-github"></i>
     </a>
