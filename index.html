@@ -64,29 +64,39 @@ section {
   line-height: 1.6;
 }
 
+#projects {
+  text-align: center;
+}
+
 .project-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #eef2ff;
-  padding: 20px;
+  background: #f4f4f4;
+  padding: 25px;
   border-radius: 20px;
-  margin: 20px auto;
-  width: 80%;
-  cursor: pointer;
+  margin: 30px auto;
+  width: 70%;
+  max-width: 900px;
+  text-decoration: none;
+  color: black;
   transition: 0.3s;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
 }
+  .project-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
 
 .project-text {
-  width: 50%;
+  width: 55%;
+  text-align: left;
 }
 
 .project-card img {
-  width: 250px;
+  width: 300px;
   border-radius: 10px;
 }
 
@@ -296,10 +306,13 @@ section {
   <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800" alt="Dessert Store">
 
   <div class="project-text">
-    <h3>E-commerce Automation Framework</h3>
-    <p>
-      Automated login, search, add to cart and checkout using Selenium WebDriver + Java.
-    </p>
+    <h3>E-commerce Backend System</h3>
+
+<p>
+A complete backend e-commerce system built using Java and Spring Boot. 
+It supports user authentication, product management, cart handling, 
+order processing and payment gateway integration.
+</p>
 
     <div class="tags">
       <span>Selenium</span>
@@ -309,6 +322,29 @@ section {
       <span>API Testing</span>
     </div>
   </div>
+
+</a>
+  <a href="https://github.com/bhartibasumatary61040/ATMFunctionality" target="_blank" class="project-card">
+
+  <!-- LEFT SIDE TEXT -->
+  <div class="project-text">
+    <h3>ATM Functionality System</h3>
+
+    <p>
+      A banking system simulation built using Java. It supports user authentication,
+      balance enquiry, deposit, withdrawal and transaction history features.
+    </p>
+
+    <div class="tags">
+      <span>Java</span>
+      <span>OOPs</span>
+      <span>File Handling</span>
+      <span>Logic Building</span>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE IMAGE -->
+  <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=800" alt="ATM Project">
 
 </a>
 <!-- SKILLS -->
