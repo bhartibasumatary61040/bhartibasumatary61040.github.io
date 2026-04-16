@@ -170,6 +170,126 @@ section {
   border: 1px solid #e2e8f0;
   display: inline-block;
 }
+/* ================= TITLE ================= */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin: 50px 0;
+}
+
+/* ================= TIMELINE ================= */
+.timeline {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+/* Center vertical line */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #e0e0e0;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Timeline item */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 60px;
+}
+
+/* LEFT */
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+/* RIGHT */
+.timeline-item.right {
+  left: 50%;
+}
+
+/* ================= CONTENT BOX ================= */
+.timeline-content {
+  background: #f9fafc;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+}
+
+/* ================= ICON (CENTER CIRCLE) ================= */
+.timeline-icon {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: #fff;
+  border: 2px solid #ddd;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================= DATE ================= */
+.timeline-date {
+  position: absolute;
+  top: 25px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* LEFT date */
+.timeline-item.left .timeline-date {
+  right: -130px;
+}
+
+/* RIGHT date */
+.timeline-item.right .timeline-date {
+  left: -130px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media screen and (max-width: 768px) {
+
+  .timeline::after {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 20px;
+    text-align: left;
+  }
+
+  .timeline-item.right {
+    left: 0;
+  }
+
+  .timeline-icon {
+    left: 20px;
+    transform: none;
+  }
+
+  .timeline-date {
+    position: relative;
+    left: 0;
+    margin-top: 10px;
+  }
+}
 /* CONTACT */
 .contact-text {
   color: #555;
@@ -580,15 +700,14 @@ order processing and payment gateway integration.
 </section>
       <!-- LEFT (Education) -->
 <div class="timeline-item left">
-  <div class="content">
-    <h3>B.Tech (Computer Science)</h3>
-    <h4>Dr. A.P.J. Abdul Kalam Technical University, Lucknow</h4>
-    <p>
-      Built a strong foundation in software development, data structures, and problem-solving.
-    </p>
-  </div>
-  <div class="date">2024 - present</div>
-</div>
+      <div class="timeline-content">
+        <h3>B.Tech (Computer Science)</h3>
+        <h4>Dr. A.P.J. Abdul Kalam Technical University, Lucknow</h4>
+        <p>Built strong foundation in software development and problem-solving.</p>
+      </div>
+      <div class="timeline-icon">🎓</div>
+      <span class="timeline-date">2016 - 2020</span>
+    </div>
 
 <!-- RIGHT (Company 1) -->
 <div class="timeline-item right">
@@ -605,6 +724,7 @@ order processing and payment gateway integration.
       <li>Managed defect lifecycle using JIRA and generated detailed test reports</li>
     </ul>
   </div>
+   <div class="timeline-icon">💼</div>
   <div class="date">2020 - 2022</div>
 </div>
 
@@ -622,6 +742,7 @@ order processing and payment gateway integration.
     </ul>
 
   </div>
+   <div class="timeline-icon">💼</div>
   <div class="date"> Sep 23 - Nov23</div>
 </div>
 
@@ -639,6 +760,7 @@ order processing and payment gateway integration.
       <li>Collaborated within Agile Scrum teams for continuous delivery and quality assurance</li>
     </ul>
   </div>
+   <div class="timeline-icon">💼</div>
   <div class="date"> july 22 - jun23</div>
 </div>
 
@@ -655,6 +777,7 @@ order processing and payment gateway integration.
       <li>Identified, logged, and tracked defects using JIRA, ensuring quick resolution</li>
     </ul>
   </div>
+   <div class="timeline-icon">💼</div>
   <div class="date">2020 - 2020</div>
 </div>
 
