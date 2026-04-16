@@ -155,36 +155,36 @@ section {
 
 /* Container */
 .skills-container {
-  max-width: 950px;
+  max-width: 1000px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
+  gap: 12px; /* 🔥 slightly tight spacing */
 }
 
-/* Skill Box */
+/* Skill pill */
 .skill {
-  padding: 10px 20px;
-  background: #f8fafc;
-  border-radius: 999px; /* 🔥 full pill */
+  padding: 8px 16px; /* 🔥 compact */
+  background: #f8fafc; /* very light */
+  border-radius: 12px; /* 🔥 less round (important) */
   font-size: 14px;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #e2e8f0;
   display: inline-block;
-  transition: all 0.25s ease;
+
+  /* ❌ REMOVE heavy effects */
+  box-shadow: none;
+  transition: none;
   cursor: default;
-
-  /* 🔥 subtle shadow (main difference) */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-/* Hover effect */
+/* ❌ REMOVE HOVER (image me nahi hai) */
+/*
 .skill:hover {
-  background: #111;
+  background: #000;
   color: #fff;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
+*/
 /* ================= EXPERIENCE ================= */
 
 .timeline {
