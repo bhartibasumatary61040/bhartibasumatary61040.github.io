@@ -65,13 +65,39 @@ section {
 }
 
 .project-card {
-  background: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eef2ff;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 20px;
+  margin: 20px auto;
+  width: 80%;
   cursor: pointer;
-  text-align: center;
-  width: 300px;
-  margin: auto;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-text {
+  width: 50%;
+}
+
+.project-card img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.tags span {
+  background: #333;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin: 5px;
+  display: inline-block;
+  font-size: 12px;
 }
 
 .modal {
@@ -265,26 +291,14 @@ section {
 
 <!-- PROJECTS -->
 
-<section id="projects">
-  <h2>My Projects</h2>
+<a href="https://github.com/bhartibasumatary61040/Major-ECommerce-App" target="_blank" class="project-card">
 
-  <div class="project-card" onclick="openModal()">
+  <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800" alt="Dessert Store">
+
+  <div class="project-text">
     <h3>E-commerce Automation Framework</h3>
-    <p>Click to view details</p>
-  </div>
-</section>
-
-<!-- POPUP MODAL -->
-<div id="projectModal" class="modal">
-  <div class="modal-content">
-    
-    <span class="close" onclick="closeModal()">&times;</span>
-
-    <h2>E-commerce Automation Framework</h2>
-
     <p>
-      Built using Selenium WebDriver, Java, TestNG with Page Object Model.
-      Automated login, search, cart and checkout flow.
+      Automated login, search, add to cart and checkout using Selenium WebDriver + Java.
     </p>
 
     <div class="tags">
@@ -292,11 +306,11 @@ section {
       <span>Java</span>
       <span>TestNG</span>
       <span>POM</span>
+      <span>API Testing</span>
     </div>
-
   </div>
-</div>
 
+</a>
 <!-- SKILLS -->
 <section id="skills">
 
