@@ -64,10 +64,48 @@ section {
   line-height: 1.6;
 }
 
-/* PROJECT */
-.card {
-  max-width: 500px;
-  margin: 20px auto;
+.project-card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  width: 300px;
+  margin: auto;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 25px;
+  width: 60%;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.close {
+  float: right;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.tags span {
+  display: inline-block;
+  background: #ddd;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin: 5px;
 }
 
 /* SKILLS */
@@ -226,26 +264,38 @@ section {
 </section>
 
 <!-- PROJECTS -->
+
 <section id="projects">
-  <h2>Projects</h2>
+  <h2>My Projects</h2>
 
-  <div class="card">
+  <div class="project-card" onclick="openModal()">
     <h3>E-commerce Automation Framework</h3>
-    <p>
-      Built using Selenium WebDriver, Java, and TestNG with Page Object Model.
-      Automated login, product search, cart, and checkout flow.
-    </p>
+    <p>Click to view details</p>
   </div>
-
-  <div class="card">
-    <h3>API Testing Project</h3>
-    <p>
-      Performed API testing using Rest Assured and Postman.
-      Validated response status codes, headers, and JSON responses.
-    </p>
-  </div>
-
 </section>
+
+<!-- POPUP MODAL -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <h2>E-commerce Automation Framework</h2>
+
+    <p>
+      Built using Selenium WebDriver, Java, TestNG with Page Object Model.
+      Automated login, search, cart and checkout flow.
+    </p>
+
+    <div class="tags">
+      <span>Selenium</span>
+      <span>Java</span>
+      <span>TestNG</span>
+      <span>POM</span>
+    </div>
+
+  </div>
+</div>
 
 <!-- SKILLS -->
 <section id="skills">
@@ -310,5 +360,17 @@ section {
 
 </section>
 
+<!-- YAHAN ADD KARO -->
+<script>
+function openModal() {
+  document.getElementById("projectModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("projectModal").style.display = "none";
+}
+</script>
+
 </body>
+</html>
 </html>
