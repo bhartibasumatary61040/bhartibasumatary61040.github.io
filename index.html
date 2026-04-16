@@ -213,7 +213,7 @@ section {
 /* LEFT */
 .timeline-item.left {
   left: 0;
-  text-align: right;
+  text-align: left; /* 🔥 FIX (right hata diya) */
 }
 
 /* RIGHT */
@@ -227,18 +227,20 @@ section {
   background: #ffffff;
   padding: 20px;
   border-radius: 12px;
-  display: inline-block;
+  display: block; /* 🔥 FIX (inline-block hata diya) */
   max-width: 90%;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* 🔥 ADD THIS (MAIN FIX) */
+/* 🔥 Proper alignment */
 .timeline-item.left .timeline-content {
   margin-left: auto;
+  margin-right: 20px;
 }
 
 .timeline-item.right .timeline-content {
   margin-right: auto;
+  margin-left: 20px;
 }
 
 /* 🔥 REMOVE BULLETS */
@@ -279,7 +281,7 @@ section {
 
 /* LEFT date */
 .timeline-item.left .timeline-date {
-  right: -120px; /* 🔥 thoda adjust */
+  right: -120px;
 }
 
 /* RIGHT date */
