@@ -181,7 +181,6 @@ section {
   color: #fff;
   transform: translateY(-2px);
 }
-
 /* ================= EXPERIENCE ================= */
 
 .section-title {
@@ -195,6 +194,7 @@ section {
   position: relative;
   width: 80%;
   margin: auto;
+  padding: 20px 0; /* 🔥 ADD */
 }
 
 /* Center line */
@@ -213,29 +213,33 @@ section {
 .timeline-item {
   position: relative;
   width: 50%;
-  padding: 20px 30px; /* 🔥 reduced spacing */
+  padding: 20px 30px;
   box-sizing: border-box;
-  margin: 20px 0; /* 🔥 gap kam kiya */
+  margin: 30px 0; /* 🔥 equal spacing */
+  display: flex; /* 🔥 ADD */
+  flex-direction: column; /* 🔥 ADD */
 }
 
 /* LEFT */
 .timeline-item.left {
   left: 0;
-  text-align: left; /* 🔥 FIX: right hata diya */
+  text-align: left;
+  align-items: flex-end; /* 🔥 FIX alignment */
 }
 
 /* RIGHT */
 .timeline-item.right {
   left: 50%;
   text-align: left;
+  align-items: flex-start; /* 🔥 FIX alignment */
 }
 
 /* Content */
 .timeline-content {
   background: #f9fafc;
-  padding: 15px; /* 🔥 thoda compact */
+  padding: 15px;
   border-radius: 10px;
-  max-width: 85%;
+  width: 100%; /* 🔥 FIX (max-width hata diya) */
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
@@ -250,7 +254,7 @@ section {
 .timeline-center {
   position: absolute;
   top: 20px;
-  left: 50%;
+  left: 100%; /* 🔥 FIX */
   transform: translateX(-50%);
 }
 
@@ -277,13 +281,14 @@ section {
 
 /* LEFT → date right side */
 .timeline-item.left .timeline-date {
-  right: -100px; /* 🔥 thoda paas laya */
+  right: -90px; /* 🔥 thoda aur better */
 }
 
 /* RIGHT → date left side */
 .timeline-item.right .timeline-date {
-  left: -100px;
+  left: -90px;
 }
+
 /* CONTACT */
 .contact-text {
   color: #555;
