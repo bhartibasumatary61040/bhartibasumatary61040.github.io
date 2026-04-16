@@ -55,7 +55,33 @@ section {
 #home span {
   font-weight: bold;
 }
+.profile-container {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 20px;
+}
 
+.profile-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;        /* white border */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 👋 emoji */
+.wave {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 6px;
+  font-size: 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
 /* ABOUT */
 #about p {
   max-width: 600px;
@@ -439,6 +465,10 @@ section {
 
 <!-- HOME -->
 <section id="home">
+  <div class="profile-container">
+  <img src="Bharti (1).jpeg" alt="profile" class="profile-img">
+  <span class="wave">👋</span>
+</div>
   <h1>
     Hi, I'm <b>Bharati Basumatary</b>.<br>
     I'm a QA Engineer with<br>
