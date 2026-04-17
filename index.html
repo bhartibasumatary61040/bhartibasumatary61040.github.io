@@ -164,7 +164,9 @@ section {
   text-align: center;
 }
 
-
+#projects {
+  text-align: center;
+}
 
 .project-card {
   display: flex;
@@ -178,7 +180,9 @@ section {
   max-width: 900px;
   margin: 20px auto;
 }
-  .project-card:nth-child(even) {
+
+/* ✅ FIXED LINE */
+.project-card:nth-of-type(even) {
   flex-direction: row-reverse;
 }
 
@@ -188,14 +192,16 @@ section {
 }
 
 .project-card img {
-  width: 45%;   /* bada ho gaya */
-  height: 220px; /* fixed height (clean look) */
+  width: 45%;
+  height: 220px;
   object-fit: cover;
   border-radius: 12px;
   transition: 0.4s ease;
 }
-  .project-card:hover img {
+
+.project-card:hover img {
   transform: scale(1.08);
+}
 }
 
 .tags span {
