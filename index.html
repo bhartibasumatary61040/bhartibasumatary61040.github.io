@@ -159,11 +159,12 @@ section {
   margin: 12px auto;
   color: #333;
 }
- .projects-container {
+.projects-container {
   display: flex;
   flex-direction: column;
 }
 
+/* CARD */
 .project-card {
   display: flex;
   align-items: center;
@@ -176,21 +177,59 @@ section {
   margin: 20px auto;
   text-decoration: none;
   color: inherit;
+  transition: 0.3s ease;
 }
 
+/* HOVER CARD */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
 .project-card img {
   width: 45%;
   height: 220px;
   object-fit: cover;
   border-radius: 12px;
+  transition: 0.4s ease;
 }
 
+/* 🔥 IMAGE HOVER ZOOM */
+.project-card:hover img {
+  transform: scale(1.08);
+}
+
+/* TEXT */
 .project-text {
   flex: 1;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-/* 🔥 AUTO ALTERNATE */
+/* TAGS */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags span {
+  background: #eee;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+/* BUTTON */
+.project-btn {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #007bff;
+}
+
+/* 🔥 ALTERNATE LEFT RIGHT */
 .projects-container .project-card:nth-child(even) {
   flex-direction: row-reverse;
 }
@@ -595,25 +634,28 @@ section {
 <h2 class="section-title">My Projects</h2>
 
 <div class="projects-container">
+<!-- PROJECT 1 -->
+    <a href="https://github.com/bhartibasumatary61040/Major-ECommerce-App" target="_blank" class="project-card">
+      
+      <img src="https://images.unsplash.com/photo-1586880244406-556ebe35f282?w=800" alt="Ecommerce">
 
-<!-- 1 -->
-<a href="https://github.com/bhartibasumatary61040/Major-ECommerce-App" target="_blank" class="project-card">
-  <img src="https://images.unsplash.com/photo-1586880244406-556ebe35f282?w=800">
-  <div class="project-text">
-    <h3>E-commerce Backend System</h3>
-    <p>A complete backend e-commerce system built using Java and Spring Boot. It supports user authentication, product management, cart handling, order processing and payment gateway integration.</p>
-  </div>
-    <div class="tags">
-      <span>Java</span>
-      <span>Spring Boot</span>
-      <span>REST API</span>
-      <span>MySQL</span>
-    </div>
+      <div class="project-text">
+        <h3>E-commerce Backend System</h3>
 
-    <!-- ✅ ADD THIS -->
-    <span class="project-btn">View Code →</span>
+        <p>
+          A complete backend e-commerce system built using Java and Spring Boot.
+          It supports authentication, product management, cart and payments.
+        </p>
 
-  </div>
+        <div class="tags">
+          <span>Java</span>
+          <span>Spring Boot</span>
+          <span>REST API</span>
+          <span>MySQL</span>
+        </div>
+
+        <span class="project-btn">View Code →</span>
+      </div>
 </a>
 
 <!-- 2 -->
