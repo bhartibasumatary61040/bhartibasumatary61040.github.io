@@ -159,7 +159,28 @@ section {
   margin: 12px auto;
   color: #333;
 }
+.project-card {
+  display: flex !important;
+  flex-direction: row !important;   /* FORCE LEFT */
+  align-items: center;
+  gap: 20px;
+}
 
+/* IMAGE LEFT FIX */
+.project-card img {
+  order: 1 !important;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* TEXT RIGHT FIX */
+.project-text {
+  order: 2 !important;
+  flex: 1;
+}
+  
 #projects {
   text-align: center;
 }
