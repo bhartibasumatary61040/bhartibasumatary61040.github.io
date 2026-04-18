@@ -341,27 +341,27 @@ section {
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 /* ================= EXPERIENCE ================= */
-/* ===== EXPERIENCE FINAL PERFECT ===== */
+/* ===== EXPERIENCE SECTION ===== */
 
 #experience {
-  padding: 60px 0;
+  padding: 50px 0;
 }
 
-/* TITLE */
+/* title */
 .section-title {
   text-align: center;
-  margin-bottom: 40px;
   font-size: 28px;
+  margin-bottom: 30px;
 }
 
-/* TIMELINE */
+/* timeline */
 .timeline {
   position: relative;
   width: 80%;
   margin: auto;
 }
 
-/* CENTER LINE */
+/* center line */
 .timeline::after {
   content: "";
   position: absolute;
@@ -373,68 +373,68 @@ section {
   transform: translateX(-50%);
 }
 
-/* ITEM */
+/* item */
 .timeline-item {
   position: relative;
   width: 50%;
-  padding: 20px 40px;
-  box-sizing: border-box;
+  padding: 10px 30px;
+  margin-bottom: 25px;
 }
 
-/* LEFT SIDE */
+/* left */
 .timeline-item.left {
   left: 0;
-  padding-right: 80px;
+  padding-right: 60px;
 }
 
-/* RIGHT SIDE */
+/* right */
 .timeline-item.right {
   left: 50%;
-  padding-left: 80px;
+  padding-left: 60px;
 }
 
-/* DOT */
+/* dots */
 .timeline-item::after {
   content: "";
   position: absolute;
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   background: #000;
   border-radius: 50%;
-  top: 25px;
-  right: -7px;
-  z-index: 1;
+  top: 20px;
+  right: -6px;
 }
 
 .timeline-item.right::after {
-  left: -7px;
+  left: -6px;
 }
 
-/* CARD */
+/* card */
 .content {
   background: #fff;
-  padding: 18px 20px;
-  border-radius: 12px;
+  padding: 15px 18px;
+  border-radius: 10px;
   border: 1px solid #eee;
-  max-width: 420px;
-  text-align: left;   /* 🔥 FIX */
+  max-width: 380px;
+  text-align: left;
   transition: 0.3s ease;
 }
 
-/* HOVER */
+/* hover */
 .content:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-/* TEXT */
+/* text */
 .content h3 {
   margin: 0;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .content h4 {
-  margin: 5px 0;
+  margin: 4px 0;
+  font-size: 14px;
   color: #555;
 }
 
@@ -446,8 +446,8 @@ section {
 }
 
 .content p {
-  margin: 4px 0;
-  font-size: 14px;
+  margin: 3px 0;
+  font-size: 13px;
 }
 /*========== Content box ==============*/
 .timeline-content {
@@ -996,51 +996,73 @@ section {
 
   <div class="timeline">
 
-    <!-- 1 LEFT -->
+    <!-- LEFT -->
     <div class="timeline-item left">
       <div class="content">
-        <h3>Software Test Engineer</h3>
-        <h4>Brain Vision Technology</h4>
-        <span>March 2024 - Present</span>
-        <p>Designed test plans and test cases</p>
-        <p>Built hybrid automation framework</p>
-        <p>Worked on Selenium, TestNG, Jenkins</p>
+        <h3>Construction Finance Platform</h3>
+        <h4>Domain: Banking / Real Estate</h4>
+        <span>Web Application</span>
+
+        <p>Ensured quality of construction finance platform through manual and automation testing</p>
+        <p>Developed automation scripts using Selenium WebDriver with Java</p>
+        <p>Handled dynamic web elements using XPath and CSS selectors</p>
+        <p>Validated loan processing, fund disbursement and reporting modules</p>
+        <p>Performed API testing using Postman</p>
+        <p>Tracked and managed defects using JIRA</p>
+        <p>Worked in Agile Scrum environment</p>
+
+        <span><b>Tools:</b> Selenium, Java, TestNG, Postman, JIRA</span>
       </div>
     </div>
 
-    <!-- 2 RIGHT -->
+    <!-- RIGHT -->
     <div class="timeline-item right">
       <div class="content">
-        <h3>Software Engineer</h3>
-        <h4>Innominds Software</h4>
-        <span>Sep 2023 - Nov 2023</span>
-        <p>Selenium WebDriver with Java</p>
-        <p>Tested payment systems</p>
-        <p>SQL validation & reporting</p>
+        <h3>Auto Payment Integration</h3>
+        <h4>Domain: Telecom</h4>
+        <span>Web + API</span>
+
+        <p>Validated payment gateway integration for secure transactions</p>
+        <p>Tested real-time payment processing and billing workflows</p>
+        <p>Performed API validation for transaction accuracy</p>
+        <p>Created regression test cases using Selenium and TestNG</p>
+        <p>Verified payment success and failure scenarios</p>
+
+        <span><b>Tools:</b> Selenium, Java, TestNG, Postman, JIRA</span>
       </div>
     </div>
 
-    <!-- 3 LEFT -->
+    <!-- LEFT -->
     <div class="timeline-item left">
       <div class="content">
-        <h3>Software Engineer</h3>
-        <h4>Cybage Software</h4>
-        <span>July 2022 - June 2023</span>
-        <p>Selenium automation</p>
-        <p>API testing using Postman</p>
-        <p>Agile + JIRA</p>
+        <h3>Global Banking Platform</h3>
+        <h4>Domain: Banking</h4>
+        <span>Web Application</span>
+
+        <p>Tested banking operations including account updates and customer data management</p>
+        <p>Performed API testing for microservices validation</p>
+        <p>Executed functional and regression testing</p>
+        <p>Designed and executed test cases</p>
+        <p>Logged and tracked defects in Agile environment</p>
+
+        <span><b>Tools:</b> Postman, JIRA, Zephyr</span>
       </div>
     </div>
 
-    <!-- 4 RIGHT -->
+    <!-- RIGHT -->
     <div class="timeline-item right">
       <div class="content">
-        <h3>Software Engineer</h3>
-        <h4>Web Minds IT Solution</h4>
-        <span>Sep 2020 - Jun 2022</span>
-        <p>Manual testing & functional testing</p>
-        <p>Test case design</p>
-        <p>Bug tracking in JIRA</p>
+        <h3>Assessment Lab</h3>
+        <h4>Domain: EdTech</h4>
+        <span>Web Application</span>
+
+        <p>Validated online examination system functionality and performance</p>
+        <p>Tested login, exam flow and result generation</p>
+        <p>Performed cross-browser testing</p>
+        <p>Ensured data security and exam integrity</p>
+        <p>Designed and executed test cases</p>
+
+        <span><b>Tools:</b> Postman, JIRA, Azure DevOps</span>
       </div>
     </div>
 
