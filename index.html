@@ -602,6 +602,57 @@ section {
 .btn:hover {
   transform: translateY(-2px);
 }
+  /*============================================TIMELINE==============================*/
+  /* ===== NEW TIMELINE FIX ===== */
+
+.timeline-container {
+  position: relative;
+}
+
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background: #ddd;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  position: relative;
+}
+
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timeline-content {
+  width: 45%;
+}
+
+.timeline-date {
+  width: 45%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 4px solid #007bff;
+  border-radius: 50%;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
   /* ===== CONTACT SECTION ===== */
 #contact {
   text-align: center;
@@ -1038,9 +1089,11 @@ section {
     <!-- LEFT -->
     <div class="timeline-item left">
       <div class="content">
-        <h3>Construction Finance Platform</h3>
-        <h4>Domain: Banking / Real Estate</h4>
-        <span>Web Application</span>
+        <span class="date">Mar 2024 – Apr 2026</span>
+
+        <h3>Brain Vision</h3>
+        <h4>Construction Finance Platform</h4>
+        <span>Domain: Banking / Real Estate | Web Application</span>
 
         <p>Ensured quality of construction finance platform through manual and automation testing</p>
         <p>Developed automation scripts using Selenium WebDriver with Java</p>
@@ -1057,9 +1110,11 @@ section {
     <!-- RIGHT -->
     <div class="timeline-item right">
       <div class="content">
-        <h3>Auto Payment Integration</h3>
-        <h4>Domain: Telecom</h4>
-        <span>Web + API</span>
+        <span class="date">Sep 2023 – Nov 2023</span>
+
+        <h3>Innominds Software</h3>
+        <h4>Auto Payment Integration</h4>
+        <span>Domain: Telecom | Web + API</span>
 
         <p>Validated payment gateway integration for secure transactions</p>
         <p>Tested real-time payment processing and billing workflows</p>
@@ -1074,9 +1129,11 @@ section {
     <!-- LEFT -->
     <div class="timeline-item left">
       <div class="content">
-        <h3>Global Banking Platform</h3>
-        <h4>Domain: Banking</h4>
-        <span>Web Application</span>
+        <span class="date">Jul 2022 – Jun 2023</span>
+
+        <h3>Cybage Software</h3>
+        <h4>Global Banking Platform</h4>
+        <span>Domain: Banking | Web Application</span>
 
         <p>Tested banking operations including account updates and customer data management</p>
         <p>Performed API testing for microservices validation</p>
@@ -1091,9 +1148,11 @@ section {
     <!-- RIGHT -->
     <div class="timeline-item right">
       <div class="content">
-        <h3>Assessment Lab</h3>
-        <h4>Domain: EdTech</h4>
-        <span>Web Application</span>
+        <span class="date">Sep 2020 – Jun 2022</span>
+
+        <h3>Web Minds IT Solution</h3>
+        <h4>Assessment Lab</h4>
+        <span>Domain: EdTech | Web Application</span>
 
         <p>Validated online examination system functionality and performance</p>
         <p>Tested login, exam flow and result generation</p>
