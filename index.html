@@ -450,15 +450,38 @@ section {
   margin: 2px 0;
   line-height: 1.4;
 }
-  /* center ko relative rakho */
+/* CENTER LINE FIX */
 .center {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
 }
 
-/* DATE ko circle ke paas fix karo */
+/* EACH ITEM FIX HEIGHT */
+.timeline-item {
+  position: relative;
+  min-height: 220px; /* 🔥 IMPORTANT */
+}
+
+/* CIRCLE PERFECT CENTER */
+.icon {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #888;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* DATE PERFECT ALIGN */
 .date {
   position: absolute;
-  top: 20px;   /* 🔥 ye adjust kar sakti ho (15–25) */
+  top: 45px;   /* 🔥 circle ke niche */
   left: 50%;
   transform: translateX(-50%);
   font-size: 12px;
@@ -466,10 +489,14 @@ section {
   white-space: nowrap;
 }
 
-/* circle fix */
-.icon {
-  position: relative;
-  z-index: 2;
+/* LEFT CONTENT CLOSE TO LINE */
+.left-content {
+  padding-right: 40px;
+}
+
+/* RIGHT CONTENT CLOSE TO LINE */
+.right-content {
+  padding-left: 40px;
 }
   /* ===== CONTACT SECTION ===== */
 #contact {
