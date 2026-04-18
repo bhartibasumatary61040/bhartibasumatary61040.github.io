@@ -341,50 +341,56 @@ section {
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 /* ================= EXPERIENCE ================= */
+
 #experience {
   padding: 60px 0;
   text-align: center;
 }
 
+/* timeline container */
 .timeline {
   position: relative;
   width: 80%;
   margin: auto;
 }
 
-/* CENTER LINE */
+/* center line */
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 2px;
   background: #ddd;
   top: 0;
   bottom: 0;
   left: 50%;
+  transform: translateX(-50%);
 }
 
-/* ITEM */
+/* item base */
 .timeline-item {
-  padding: 20px 40px;
   position: relative;
   width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
 }
 
-/* LEFT */
+/* LEFT SIDE */
 .timeline-item.left {
   left: 0;
+  padding-right: 80px;   /* distance from line */
   text-align: right;
 }
 
-/* RIGHT */
+/* RIGHT SIDE */
 .timeline-item.right {
   left: 50%;
+  padding-left: 80px;    /* distance from line */
   text-align: left;
 }
 
 /* DOT */
 .timeline-item::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 14px;
   height: 14px;
@@ -392,8 +398,10 @@ section {
   border-radius: 50%;
   top: 25px;
   right: -7px;
+  z-index: 1;
 }
 
+/* right side dot fix */
 .timeline-item.right::after {
   left: -7px;
 }
@@ -401,20 +409,23 @@ section {
 /* CARD */
 .content {
   background: #fff;
-  padding: 18px;
-  border-radius: 10px;
+  padding: 18px 20px;
+  border-radius: 12px;
   border: 1px solid #eee;
+  max-width: 420px;
   transition: 0.3s ease;
 }
 
+/* hover */
 .content:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
 /* TEXT */
 .content h3 {
   margin: 0;
+  font-size: 18px;
 }
 
 .content h4 {
@@ -425,13 +436,19 @@ section {
 .content span {
   font-size: 12px;
   color: #888;
+  display: block;
+  margin-bottom: 6px;
 }
 
 .content p {
-  margin: 5px 0;
+  margin: 4px 0;
   font-size: 14px;
 }
 
+/* 🔥 FIRST ITEM FIX (important for you) */
+.timeline-item:first-child {
+  margin-top: 20px;
+}
 /*========== Content box ==============*/
 .timeline-content {
   background: #ffffff;
