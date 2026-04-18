@@ -341,20 +341,27 @@ section {
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 /* ================= EXPERIENCE ================= */
-
+/* ===== EXPERIENCE FINAL PERFECT ===== */
 
 #experience {
   padding: 60px 0;
 }
 
-/* container */
+/* TITLE */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+/* TIMELINE */
 .timeline {
   position: relative;
   width: 80%;
   margin: auto;
 }
 
-/* center line */
+/* CENTER LINE */
 .timeline::after {
   content: "";
   position: absolute;
@@ -366,7 +373,7 @@ section {
   transform: translateX(-50%);
 }
 
-/* item */
+/* ITEM */
 .timeline-item {
   position: relative;
   width: 50%;
@@ -374,13 +381,13 @@ section {
   box-sizing: border-box;
 }
 
-/* LEFT */
+/* LEFT SIDE */
 .timeline-item.left {
   left: 0;
   padding-right: 80px;
 }
 
-/* RIGHT */
+/* RIGHT SIDE */
 .timeline-item.right {
   left: 50%;
   padding-left: 80px;
@@ -410,13 +417,13 @@ section {
   border-radius: 12px;
   border: 1px solid #eee;
   max-width: 420px;
-  text-align: left;   /* 🔥 IMPORTANT FIX */
-  transition: 0.3s;
+  text-align: left;   /* 🔥 FIX */
+  transition: 0.3s ease;
 }
 
-/* hover */
+/* HOVER */
 .content:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
