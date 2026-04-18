@@ -280,27 +280,30 @@ section {
 
 /* ================= SKILLS ================= */
 
-.skills-container {
-  width: 80%;
-  margin: auto;
+#skills {
   text-align: center;
-  line-height: 1.6;
+  padding: 40px 0;
 }
 
-/* section title */
 #skills h2 {
   font-size: 28px;
   margin-bottom: 25px;
 }
 
-/* category headings */
+/* container */
+.skills-container {
+  width: 80%;
+  margin: auto;
+}
+
+/* headings */
 .skills-container h3 {
   margin-top: 30px;
   font-size: 18px;
   color: #444;
 }
 
-/* tags container */
+/* tags row */
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
@@ -310,17 +313,17 @@ section {
 }
 
 /* individual tag */
-.skill-tags span {
+#skills .skill-tags span {
   background: #f0f0f0;
   padding: 10px 16px;
   border-radius: 25px;
   font-size: 14px;
+  display: inline-block;
   transition: all 0.3s ease;
-  cursor: default;
 }
 
 /* 🔥 hover effect */
-.skill-tags span:hover {
+#skills .skill-tags span:hover {
   background: #000;
   color: #fff;
   transform: translateY(-3px);
