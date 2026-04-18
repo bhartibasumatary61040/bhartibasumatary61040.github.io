@@ -341,7 +341,7 @@ section {
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 /* ================= EXPERIENCE ================= */
-/* ===== EXPERIENCE SECTION ===== */
+
 #experience {
   padding: 60px 20px;
   background: #f9f9f9;
@@ -353,7 +353,7 @@ section {
   font-size: 28px;
 }
 
-/* ===== TIMELINE ===== */
+/* timeline */
 .timeline {
   max-width: 1000px;
   margin: auto;
@@ -372,22 +372,22 @@ section {
   transform: translateX(-50%);
 }
 
-/* ===== EACH ROW ===== */
+/* row */
 .timeline-item {
   display: grid;
-  grid-template-columns: 1fr 120px 1fr;
-  align-items: center;
-  margin-bottom: 35px;   /* 👈 compact spacing */
+  grid-template-columns: 1fr 90px 1fr; /* tight & balanced */
+  align-items: flex-start;
+  margin-bottom: 35px;
 }
 
-/* ===== CENTER PART ===== */
+/* center */
 .center {
   text-align: center;
 }
 
 .icon {
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   background: #fff;
   border: 2px solid #ddd;
@@ -405,76 +405,32 @@ section {
   color: #555;
 }
 
-/* ===== CONTENT CARD ===== */
+/* content */
 .content {
   background: #fff;
-  padding: 25px;                 /* 👈 bigger box */
+  padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  max-width: 420px;              /* 👈 wider */
+  max-width: 400px;
   width: 100%;
 }
 
-/* ===== ALIGNMENT ===== */
+/* alignment */
 .left-content {
   display: flex;
   justify-content: flex-end;
-  padding-right: 40px;           /* 👈 closer to center */
+  align-items: flex-start;
+  padding-right: 25px;
 }
 
 .right-content {
   display: flex;
   justify-content: flex-start;
-  padding-left: 40px;            /* 👈 closer to center */
+  align-items: flex-start;
+  padding-left: 25px;
 }
 
-/* ===== TEXT ===== */
-.content h3 {
-  margin-bottom: 6px;
-  font-size: 16px;
-}
-
-.content h4 {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-.content p {
-  font-size: 13px;
-  margin: 4px 0;
-  line-height: 1.5;
-}
-
-.content span {
-  font-size: 13px;
-  color: #444;
-}
-
-/* ===== CONTENT CARD ===== */
-.content {
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  max-width: 380px;
-  width: 100%;
-}
-
-/* ===== ALIGNMENT ===== */
-.left-content {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 70px;   /* balanced spacing */
-}
-
-.right-content {
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 70px;    /* balanced spacing */
-}
-
-/* ===== TEXT STYLING ===== */
+/* text */
 .content h3 {
   margin-bottom: 6px;
   font-size: 16px;
@@ -930,7 +886,7 @@ section {
 
   <div class="timeline">
 
-    <!-- 1 -->
+    <!-- 1 LEFT -->
     <div class="timeline-item">
       <div class="left-content">
         <div class="content">
@@ -958,7 +914,7 @@ section {
       <div class="right-content"></div>
     </div>
 
-    <!-- 2 -->
+    <!-- 2 RIGHT -->
     <div class="timeline-item">
       <div class="left-content"></div>
 
@@ -984,7 +940,7 @@ section {
       </div>
     </div>
 
-    <!-- 3 -->
+    <!-- 3 LEFT -->
     <div class="timeline-item">
       <div class="left-content">
         <div class="content">
@@ -1010,7 +966,7 @@ section {
       <div class="right-content"></div>
     </div>
 
-    <!-- 4 -->
+    <!-- 4 RIGHT -->
     <div class="timeline-item">
       <div class="left-content"></div>
 
