@@ -602,6 +602,75 @@ section {
 .btn:hover {
   transform: translateY(-2px);
 }
+  /* ===== CONTACT SECTION ===== */
+#contact {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f9fafb;
+}
+
+/* title */
+.contact-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+/* text */
+.contact-text {
+  font-size: 15px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.contact-text a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ===== FORM ===== */
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* input + textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* focus effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #000;
+}
+
+/* button */
+.contact-form button {
+  padding: 12px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* hover */
+.contact-form button:hover {
+  background: #333;
+}
 </style>
 </head>
 
@@ -1039,20 +1108,22 @@ section {
 
 <!-- CONTACT -->
 <section id="contact">
-  <h2>Contact Me</h2>
+  <h2 class="contact-title">Contact Me</h2>
 
   <p class="contact-text">
     Please contact me directly at 
-    <a href="mailto:bharatibasumatary61040@gmail.com">
-      bharatibasumatary61040@gmail.com
+    <a href="mailto:bhartibasumatary61040@gmail.com">
+      bhartibasumatary61040@gmail.com
     </a>
   </p>
 
   <form class="contact-form">
-    <input type="email" placeholder="Your email">
-    <textarea placeholder="Your message"></textarea>
-  </form>
+    <input type="email" placeholder="Your email" required>
+    
+    <textarea placeholder="Your message" rows="5" required></textarea>
 
+    <button type="submit">Send Message</button>
+  </form>
 </section>
 
 <!-- YAHAN ADD KARO -->
