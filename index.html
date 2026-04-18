@@ -342,6 +342,7 @@ section {
 }
 /* ================= EXPERIENCE ================= */
 
+/* ===== SECTION ===== */
 #experience {
   padding: 60px 20px;
   background: #f9f9f9;
@@ -375,29 +376,28 @@ section {
 /* ===== ROW ===== */
 .timeline-item {
   display: grid;
-  grid-template-columns: 1fr 80px 1fr;  /* 👈 tighter center */
-  align-items: center;
-  margin-bottom: 25px;                  /* 👈 gap kam */
+  grid-template-columns: 1fr 80px 1fr;
+  align-items: stretch;   /* 🔥 key fix */
+  margin-bottom: 30px;
 }
 
 /* ===== CENTER ===== */
 .center {
   text-align: center;
-  position: relative;
 }
 
-.icon {
+.circle {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: #fff;
   border: 2px solid #aaa;
+  background: #fff;
   margin: auto;
 }
 
 .date {
   display: block;
-  margin-top: 5px;
+  margin-top: 6px;
   font-size: 11px;
   color: #555;
 }
@@ -408,21 +408,24 @@ section {
   padding: 18px;
   border-radius: 10px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-  max-width: 320px;   /* 👈 smaller = balanced */
+  max-width: 320px;
   width: 100%;
+  height: 100%;   /* 🔥 equal height */
 }
 
 /* ===== ALIGNMENT ===== */
 .left-content {
   display: flex;
   justify-content: flex-end;
-  padding-right: 20px;   /* 👈 center ke paas */
+  align-items: stretch;
+  padding-right: 20px;
 }
 
 .right-content {
   display: flex;
   justify-content: flex-start;
-  padding-left: 20px;    /* 👈 center ke paas */
+  align-items: stretch;
+  padding-left: 20px;
 }
 
 /* ===== TEXT ===== */
@@ -884,9 +887,9 @@ section {
     <div class="timeline-item">
       <div class="left-content">
         <div class="content">
-          <h3>Brain Vision</h3>
+          <h3>Brain Vision Technology</h3>
           <h4>Construction Finance Platform</h4>
-          <span class="domain">Domain: Banking / Real Estate | Web Application</span>
+          <span>Domain: Banking / Real Estate | Web Application</span>
 
           <p>Ensured quality of construction finance platform through manual and automation testing</p>
           <p>Developed automation scripts using Selenium WebDriver with Java</p>
@@ -896,12 +899,12 @@ section {
           <p>Tracked and managed defects using JIRA</p>
           <p>Worked in Agile Scrum environment</p>
 
-          <span class="tools"><b>Tools:</b> Selenium, Java, TestNG, Postman, JIRA</span>
+          <span><b>Tools:</b> Selenium, Java, TestNG, Postman, JIRA</span>
         </div>
       </div>
 
       <div class="center">
-        <div class="icon"></div>
+        <div class="circle"></div>
         <span class="date">Mar 2024 – Apr 2026</span>
       </div>
 
@@ -913,7 +916,7 @@ section {
       <div class="left-content"></div>
 
       <div class="center">
-        <div class="icon"></div>
+        <div class="circle"></div>
         <span class="date">Sep 2023 – Nov 2023</span>
       </div>
 
@@ -921,7 +924,7 @@ section {
         <div class="content">
           <h3>Innominds Software</h3>
           <h4>Auto Payment Integration</h4>
-          <span class="domain">Domain: Telecom | Web + API</span>
+          <span>Domain: Telecom | Web + API</span>
 
           <p>Validated payment gateway integration for secure transactions</p>
           <p>Tested real-time payment processing and billing workflows</p>
@@ -929,7 +932,7 @@ section {
           <p>Created regression test cases using Selenium and TestNG</p>
           <p>Verified payment success and failure scenarios</p>
 
-          <span class="tools"><b>Tools:</b> Selenium, Java, TestNG, Postman, JIRA</span>
+          <span><b>Tools:</b> Selenium, Java, TestNG, Postman, JIRA</span>
         </div>
       </div>
     </div>
@@ -940,7 +943,7 @@ section {
         <div class="content">
           <h3>Cybage Software</h3>
           <h4>Global Banking Platform</h4>
-          <span class="domain">Domain: Banking | Web Application</span>
+          <span>Domain: Banking | Web Application</span>
 
           <p>Tested banking operations including account updates and customer data management</p>
           <p>Performed API testing for microservices validation</p>
@@ -948,12 +951,12 @@ section {
           <p>Designed and executed test cases</p>
           <p>Logged and tracked defects in Agile environment</p>
 
-          <span class="tools"><b>Tools:</b> Postman, JIRA, Zephyr</span>
+          <span><b>Tools:</b> Postman, JIRA, Zephyr</span>
         </div>
       </div>
 
       <div class="center">
-        <div class="icon"></div>
+        <div class="circle"></div>
         <span class="date">Jul 2022 – Jun 2023</span>
       </div>
 
@@ -965,7 +968,7 @@ section {
       <div class="left-content"></div>
 
       <div class="center">
-        <div class="icon"></div>
+        <div class="circle"></div>
         <span class="date">Sep 2020 – Jun 2022</span>
       </div>
 
@@ -973,7 +976,7 @@ section {
         <div class="content">
           <h3>Web Minds IT Solution</h3>
           <h4>Assessment Lab</h4>
-          <span class="domain">Domain: EdTech | Web Application</span>
+          <span>Domain: EdTech | Web Application</span>
 
           <p>Validated online examination system functionality and performance</p>
           <p>Tested login, exam flow and result generation</p>
@@ -981,7 +984,7 @@ section {
           <p>Ensured data security and exam integrity</p>
           <p>Designed and executed test cases</p>
 
-          <span class="tools"><b>Tools:</b> Postman, JIRA, Azure DevOps</span>
+          <span><b>Tools:</b> Postman, JIRA, Azure DevOps</span>
         </div>
       </div>
     </div>
