@@ -341,45 +341,49 @@ section {
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 /* ================= EXPERIENCE ================= */
+
 #experience {
-  padding: 60px 20px;
+  padding: 70px 20px;
   background: #f9f9f9;
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+  font-size: 28px;
 }
 
-/* timeline */
+/* ===== TIMELINE ===== */
 .timeline {
   max-width: 1100px;
   margin: auto;
   position: relative;
 }
 
-/* center line */
+/* center line perfectly middle */
 .timeline::after {
   content: '';
   position: absolute;
   width: 2px;
-  background: #ddd;
+  background: #ccc;
   top: 0;
   bottom: 0;
   left: 50%;
+  transform: translateX(-50%);
 }
 
-/* item */
+/* ===== EACH ROW ===== */
 .timeline-item {
   display: grid;
-  grid-template-columns: 1fr 150px 1fr;
+  grid-template-columns: 1fr 140px 1fr;  /* perfectly balanced */
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
-/* center */
+/* ===== CENTER PART ===== */
 .center {
   text-align: center;
+  position: relative;
 }
 
 .icon {
@@ -392,7 +396,7 @@ section {
   align-items: center;
   justify-content: center;
   margin: auto;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .date {
@@ -402,27 +406,52 @@ section {
   color: #555;
 }
 
-/* content */
+/* ===== CONTENT CARD ===== */
 .content {
   background: #fff;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  max-width: 400px;
+  max-width: 380px;
+  width: 100%;
 }
 
-/* alignment */
+/* ===== ALIGNMENT ===== */
 .left-content {
   display: flex;
   justify-content: flex-end;
-  padding-right: 40px;
+  padding-right: 70px;   /* balanced spacing */
 }
 
 .right-content {
   display: flex;
   justify-content: flex-start;
-  padding-left: 40px;
+  padding-left: 70px;    /* balanced spacing */
 }
+
+/* ===== TEXT STYLING ===== */
+.content h3 {
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.content h4 {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 13px;
+  margin: 4px 0;
+  line-height: 1.5;
+}
+
+.content span {
+  font-size: 13px;
+  color: #444;
+}
+
   /* ===== CONTACT SECTION ===== */
 #contact {
   text-align: center;
