@@ -341,7 +341,7 @@ section {
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 /* ================= EXPERIENCE ================= */
-
+/* ===== EXPERIENCE SECTION ===== */
 #experience {
   padding: 60px 20px;
   background: #f9f9f9;
@@ -353,9 +353,9 @@ section {
   font-size: 28px;
 }
 
-/* timeline */
+/* ===== TIMELINE ===== */
 .timeline {
-  max-width: 950px;
+  max-width: 1000px;
   margin: auto;
   position: relative;
 }
@@ -372,15 +372,15 @@ section {
   transform: translateX(-50%);
 }
 
-/* row */
+/* ===== ROW ===== */
 .timeline-item {
   display: grid;
-  grid-template-columns: 1fr 100px 1fr;
+  grid-template-columns: 1fr 110px 1fr;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
-/* center */
+/* ===== CENTER ===== */
 .center {
   text-align: center;
 }
@@ -405,54 +405,49 @@ section {
   color: #555;
 }
 
-/* content */
+/* ===== CONTENT ===== */
 .content {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  max-width: 350px;
+  max-width: 360px;
   width: 100%;
-  min-height: 200px;
 }
 
-/* alignment */
+/* ===== ALIGNMENT ===== */
 .left-content {
   display: flex;
   justify-content: flex-end;
-  padding-right: 40px;
+  padding-right: 45px;
 }
 
 .right-content {
   display: flex;
   justify-content: flex-start;
-  padding-left: 40px;
+  padding-left: 45px;
 }
 
-/* text */
+/* ===== TEXT ===== */
 .content h3 {
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 5px;
 }
 
 .content h4 {
-  font-size: 13px;
+  font-size: 14px;
   color: #555;
   margin-bottom: 8px;
 }
 
-.content ul {
-  padding-left: 15px;
-  margin: 8px 0;
-}
-
-.content li {
-  font-size: 12.5px;
-  margin-bottom: 4px;
+.content p {
+  font-size: 13px;
+  margin: 3px 0;
+  line-height: 1.4;
 }
 
 .content span {
-  font-size: 12.5px;
+  font-size: 13px;
   color: #444;
 }
   /* ===== CONTACT SECTION ===== */
@@ -888,41 +883,40 @@ section {
 
   <div class="timeline">
 
-    <!-- 1 LEFT -->
+    <!-- 1 -->
     <div class="timeline-item">
       <div class="left-content">
         <div class="content">
           <h3>Brain Vision</h3>
           <h4>Construction Finance Platform</h4>
-          <span>Domain: Banking / Real Estate | Web Application</span>
+          <span class="domain">Domain: Banking / Real Estate | Web Application</span>
 
-          <ul>
-            <li>Manual & automation testing</li>
-            <li>Selenium WebDriver with Java</li>
-            <li>XPath & CSS selectors handling</li>
-            <li>Loan processing & reporting validation</li>
-            <li>API testing using Postman</li>
-            <li>Defect tracking using JIRA</li>
-          </ul>
+          <p>Ensured quality of construction finance platform through manual and automation testing</p>
+          <p>Developed automation scripts using Selenium WebDriver with Java</p>
+          <p>Handled dynamic web elements using XPath and CSS selectors</p>
+          <p>Validated loan processing, fund disbursement and reporting modules</p>
+          <p>Performed API testing using Postman</p>
+          <p>Tracked and managed defects using JIRA</p>
+          <p>Worked in Agile Scrum environment</p>
 
-          <span><b>Tools:</b> Selenium, Java, TestNG, Postman, JIRA</span>
+          <span class="tools"><b>Tools:</b> Selenium, Java, TestNG, Postman, JIRA</span>
         </div>
       </div>
 
       <div class="center">
-        <div class="icon">💼</div>
+        <div class="icon"></div>
         <span class="date">Mar 2024 – Apr 2026</span>
       </div>
 
       <div class="right-content"></div>
     </div>
 
-    <!-- 2 RIGHT -->
+    <!-- 2 -->
     <div class="timeline-item">
       <div class="left-content"></div>
 
       <div class="center">
-        <div class="icon">💼</div>
+        <div class="icon"></div>
         <span class="date">Sep 2023 – Nov 2023</span>
       </div>
 
@@ -930,54 +924,51 @@ section {
         <div class="content">
           <h3>Innominds Software</h3>
           <h4>Auto Payment Integration</h4>
-          <span>Domain: Telecom | Web + API</span>
+          <span class="domain">Domain: Telecom | Web + API</span>
 
-          <ul>
-            <li>Payment gateway validation</li>
-            <li>Real-time transaction testing</li>
-            <li>API validation</li>
-            <li>Regression testing (Selenium + TestNG)</li>
-            <li>Success & failure scenario validation</li>
-          </ul>
+          <p>Validated payment gateway integration for secure transactions</p>
+          <p>Tested real-time payment processing and billing workflows</p>
+          <p>Performed API validation for transaction accuracy</p>
+          <p>Created regression test cases using Selenium and TestNG</p>
+          <p>Verified payment success and failure scenarios</p>
 
-          <span><b>Tools:</b> Selenium, Java, TestNG, Postman, JIRA</span>
+          <span class="tools"><b>Tools:</b> Selenium, Java, TestNG, Postman, JIRA</span>
         </div>
       </div>
     </div>
 
-    <!-- 3 LEFT -->
+    <!-- 3 -->
     <div class="timeline-item">
       <div class="left-content">
         <div class="content">
           <h3>Cybage Software</h3>
           <h4>Global Banking Platform</h4>
-          <span>Domain: Banking | Web Application</span>
+          <span class="domain">Domain: Banking | Web Application</span>
 
-          <ul>
-            <li>Functional & regression testing</li>
-            <li>API testing (microservices)</li>
-            <li>Test case design & execution</li>
-            <li>Defect tracking in Agile</li>
-          </ul>
+          <p>Tested banking operations including account updates and customer data management</p>
+          <p>Performed API testing for microservices validation</p>
+          <p>Executed functional and regression testing</p>
+          <p>Designed and executed test cases</p>
+          <p>Logged and tracked defects in Agile environment</p>
 
-          <span><b>Tools:</b> Postman, JIRA, Zephyr</span>
+          <span class="tools"><b>Tools:</b> Postman, JIRA, Zephyr</span>
         </div>
       </div>
 
       <div class="center">
-        <div class="icon">💼</div>
+        <div class="icon"></div>
         <span class="date">Jul 2022 – Jun 2023</span>
       </div>
 
       <div class="right-content"></div>
     </div>
 
-    <!-- 4 RIGHT -->
+    <!-- 4 -->
     <div class="timeline-item">
       <div class="left-content"></div>
 
       <div class="center">
-        <div class="icon">💼</div>
+        <div class="icon"></div>
         <span class="date">Sep 2020 – Jun 2022</span>
       </div>
 
@@ -985,16 +976,15 @@ section {
         <div class="content">
           <h3>Web Minds IT Solution</h3>
           <h4>Assessment Lab</h4>
-          <span>Domain: EdTech | Web Application</span>
+          <span class="domain">Domain: EdTech | Web Application</span>
 
-          <ul>
-            <li>Exam system validation</li>
-            <li>Login & result flow testing</li>
-            <li>Cross-browser testing</li>
-            <li>Data security validation</li>
-          </ul>
+          <p>Validated online examination system functionality and performance</p>
+          <p>Tested login, exam flow and result generation</p>
+          <p>Performed cross-browser testing</p>
+          <p>Ensured data security and exam integrity</p>
+          <p>Designed and executed test cases</p>
 
-          <span><b>Tools:</b> Postman, JIRA, Azure DevOps</span>
+          <span class="tools"><b>Tools:</b> Postman, JIRA, Azure DevOps</span>
         </div>
       </div>
     </div>
