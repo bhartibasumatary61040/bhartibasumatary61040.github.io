@@ -282,12 +282,14 @@ section {
 
 #skills {
   text-align: center;
-  padding: 50px 0;
+  padding: 60px 0;
+  background: #fafafa;
 }
 
 #skills h2 {
-  font-size: 30px;
+  font-size: 32px;
   margin-bottom: 30px;
+  font-weight: 700;
 }
 
 /* container */
@@ -298,10 +300,11 @@ section {
 
 /* headings */
 .skills-container h3 {
-  margin-top: 40px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #222;
+  margin-top: 45px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 0.5px;
 }
 
 /* tags row */
@@ -309,30 +312,32 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
-  margin-top: 15px;
-  max-width: 650px;
+  gap: 14px;
+  margin-top: 18px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* individual tag */
+/* skill button */
 #skills .skill-tags span {
-  background: #f1f3f6; /* updated color */
-  border: 1px solid #ddd;
-  padding: 10px 16px;
-  border-radius: 25px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 10px 18px;
+  border-radius: 30px;
   font-size: 14px;
+  font-weight: 500;
+  color: #333;
   display: inline-block;
   transition: all 0.3s ease;
 }
 
-/* 🔥 FINAL HOVER */
+/* 🔥 HOVER EFFECT */
 #skills .skill-tags span:hover {
-  background: #000;
+  background: linear-gradient(135deg, #000, #333);
   color: #fff;
-  transform: translateY(-4px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transform: translateY(-5px) scale(1.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 /* ================= EXPERIENCE ================= */
 
