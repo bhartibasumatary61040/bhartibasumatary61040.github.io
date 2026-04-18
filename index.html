@@ -284,26 +284,46 @@ section {
   width: 80%;
   margin: auto;
   text-align: center;
+  line-height: 1.6;
 }
 
+/* section title */
+#skills h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* category headings */
 .skills-container h3 {
-  margin-top: 25px;
-  color: #333;
+  margin-top: 30px;
+  font-size: 18px;
+  color: #444;
 }
 
+/* tags container */
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 12px;
+  margin-top: 12px;
 }
 
+/* individual tag */
 .skill-tags span {
   background: #f0f0f0;
-  padding: 8px 14px;
-  border-radius: 20px;
+  padding: 10px 16px;
+  border-radius: 25px;
   font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+/* 🔥 hover effect */
+.skill-tags span:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-3px);
 }
 /* ================= EXPERIENCE ================= */
 
