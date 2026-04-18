@@ -341,79 +341,44 @@ section {
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 /* ================= EXPERIENCE ================= */
-/* ===== EXPERIENCE FIXED ===== */
 
 .timeline {
-  position: relative;
   max-width: 1100px;
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  position: relative;
 }
 
-/* center line */
 .timeline::after {
   content: '';
   position: absolute;
-  width: 3px;
+  width: 2px;
   background: #222;
   top: 0;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
 }
 
-/* item full width */
-.timeline-item {
-  width: 100%;
-  display: flex;
-  position: relative;
+/* row */
+.timeline-row {
+  display: grid;
+  grid-template-columns: 1fr 100px 1fr;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
-/* LEFT */
-.timeline-item.left {
-  justify-content: flex-start;
+/* center */
+.timeline-center {
+  text-align: center;
 }
 
-/* RIGHT */
-.timeline-item.right {
-  justify-content: flex-end;
-}
-
-/* content box */
-.content {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  max-width: 420px;
-  width: 100%;
-}
-
-/* circle */
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  top: 25px;
-  width: 16px;
-  height: 16px;
-  background: #fff;
-  border: 3px solid #222;
+.circle {
+  width: 14px;
+  height: 14px;
+  background: #222;
   border-radius: 50%;
-  z-index: 1;
+  margin: auto;
 }
 
-/* circle position */
-.timeline-item.left::before {
-  left: calc(50% - 8px);
-}
-
-.timeline-item.right::before {
-  left: calc(50% - 8px);
-}
-
-/* date */
 .date {
   display: inline-block;
   background: #222;
@@ -421,7 +386,23 @@ section {
   padding: 4px 10px;
   border-radius: 20px;
   font-size: 12px;
-  margin-bottom: 10px;
+  margin-top: 8px;
+}
+
+/* content */
+.content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.timeline-left {
+  text-align: right;
+}
+
+.timeline-right {
+  text-align: left;
 }
   /* ===== CONTACT SECTION ===== */
 #contact {
@@ -850,7 +831,7 @@ section {
     </div>
 
   </div>
-  /*=====================================Experience==================*/
+
 <section id="experience">
   <h2 class="section-title">My Experience</h2>
 
