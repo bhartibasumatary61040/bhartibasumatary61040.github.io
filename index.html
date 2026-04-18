@@ -672,16 +672,7 @@ section {
 .contact-form button:hover {
   background: #222;
 }
- .content {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.6s ease;
-}
 
-.content.show {
-  opacity: 1;
-  transform: translateY(0);
-}
 </style>
 </head>
 
@@ -1146,23 +1137,7 @@ function openModal() {
 function closeModal() {
   document.getElementById("projectModal").style.display = "none";
 }
-  <script>
-const elements = document.querySelectorAll('.content');
 
-function reveal() {
-  elements.forEach(el => {
-    const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 50) {
-      el.classList.add('show');
-    }
-  });
-}
-
-window.addEventListener('scroll', reveal);
-
-/* 🔥 page load pe bhi call karo */
-reveal();
-</script>
   </script>
 
 </body>
