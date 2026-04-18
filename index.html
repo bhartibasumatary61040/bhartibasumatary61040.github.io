@@ -342,12 +342,12 @@ section {
 }
 /* ================= EXPERIENCE ================= */
 
+
 #experience {
   padding: 60px 0;
-  text-align: center;
 }
 
-/* timeline container */
+/* container */
 .timeline {
   position: relative;
   width: 80%;
@@ -366,7 +366,7 @@ section {
   transform: translateX(-50%);
 }
 
-/* item base */
+/* item */
 .timeline-item {
   position: relative;
   width: 50%;
@@ -374,18 +374,16 @@ section {
   box-sizing: border-box;
 }
 
-/* LEFT SIDE */
+/* LEFT */
 .timeline-item.left {
   left: 0;
-  padding-right: 80px;   /* distance from line */
-  text-align: right;
+  padding-right: 80px;
 }
 
-/* RIGHT SIDE */
+/* RIGHT */
 .timeline-item.right {
   left: 50%;
-  padding-left: 80px;    /* distance from line */
-  text-align: left;
+  padding-left: 80px;
 }
 
 /* DOT */
@@ -401,7 +399,6 @@ section {
   z-index: 1;
 }
 
-/* right side dot fix */
 .timeline-item.right::after {
   left: -7px;
 }
@@ -413,7 +410,8 @@ section {
   border-radius: 12px;
   border: 1px solid #eee;
   max-width: 420px;
-  transition: 0.3s ease;
+  text-align: left;   /* 🔥 IMPORTANT FIX */
+  transition: 0.3s;
 }
 
 /* hover */
@@ -443,11 +441,6 @@ section {
 .content p {
   margin: 4px 0;
   font-size: 14px;
-}
-
-/* 🔥 FIRST ITEM FIX (important for you) */
-.timeline-item:first-child {
-  margin-top: 20px;
 }
 /*========== Content box ==============*/
 .timeline-content {
@@ -1038,9 +1031,9 @@ section {
         <h3>Software Engineer</h3>
         <h4>Web Minds IT Solution</h4>
         <span>Sep 2020 - Jun 2022</span>
-        <p>Manual + Regression testing</p>
-        <p>End-to-end validation</p>
-        <p>Defect tracking using JIRA</p>
+        <p>Manual testing & functional testing</p>
+        <p>Test case design</p>
+        <p>Bug tracking in JIRA</p>
       </div>
     </div>
 
