@@ -350,6 +350,7 @@ section {
   text-align: center;
   font-size: 32px;
   margin-bottom: 50px;
+  font-weight: 600;
 }
 
 /* ===== TIMELINE ===== */
@@ -371,29 +372,29 @@ section {
   margin-left: -1px;
 }
 
-/* item */
+/* ===== ITEM ===== */
 .timeline-item {
   position: relative;
   width: 50%;
   padding: 20px 40px;
+  box-sizing: border-box;
 }
 
-/* left */
+/* LEFT */
 .timeline-item.left {
   left: 0;
-  text-align: right;
 }
 
-/* right */
+/* RIGHT */
 .timeline-item.right {
   left: 50%;
 }
 
-/* dot */
+/* ===== DOT ===== */
 .timeline-item::before {
   content: '';
   position: absolute;
-  top: 25px;
+  top: 28px;
   width: 14px;
   height: 14px;
   background: #2563eb;
@@ -409,6 +410,81 @@ section {
 .timeline-item.right::before {
   left: -7px;
 }
+
+/* ===== CONTENT BOX ===== */
+.content {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+  max-width: 420px;   /* 🔥 overlap fix */
+}
+
+/* 🔥 MAIN ALIGNMENT FIX */
+.timeline-item.left .content {
+  margin-left: auto;
+  text-align: right;
+}
+
+.timeline-item.right .content {
+  margin-right: auto;
+  text-align: left;
+}
+
+/* ===== TEXT ===== */
+.content h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #111827;
+}
+
+.content h4 {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+.content span {
+  display: block;
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 14px;
+  margin: 6px 0;
+  color: #4b5563;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media screen and (max-width: 768px) {
+
+  .timeline::after {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 20px;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+  }
+
+  .timeline-item::before {
+    left: 12px;
+  }
+
+  .content {
+    max-width: 100%;
+    text-align: left;
+  }
+
 
 /* ===== CONTENT BOX ===== */
 .content {
@@ -469,7 +545,7 @@ section {
   .timeline-item::before {
     left: 15px;
   }
-
+}
 
 /* content box */
 .timeline-content {
