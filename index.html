@@ -353,9 +353,9 @@ section {
   font-size: 28px;
 }
 
-/* ===== TIMELINE ===== */
+/* timeline */
 .timeline {
-  max-width: 1000px;
+  max-width: 950px;
   margin: auto;
   position: relative;
 }
@@ -372,22 +372,22 @@ section {
   transform: translateX(-50%);
 }
 
-/* ===== ROW ===== */
+/* row */
 .timeline-item {
   display: grid;
-  grid-template-columns: 1fr 110px 1fr;  /* perfect balance */
-  align-items: center;                   /* 👈 key fix */
-  margin-bottom: 40px;                  /* clean spacing */
+  grid-template-columns: 1fr 100px 1fr;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
-/* ===== CENTER ===== */
+/* center */
 .center {
   text-align: center;
 }
 
 .icon {
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background: #fff;
   border: 2px solid #ddd;
@@ -395,7 +395,7 @@ section {
   align-items: center;
   justify-content: center;
   margin: auto;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .date {
@@ -405,52 +405,56 @@ section {
   color: #555;
 }
 
-/* ===== CONTENT BOX ===== */
+/* content */
 .content {
   background: #fff;
-  padding: 22px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  max-width: 380px;   /* balanced size */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  max-width: 350px;
   width: 100%;
+  min-height: 200px;
 }
 
-/* ===== ALIGNMENT ===== */
+/* alignment */
 .left-content {
   display: flex;
   justify-content: flex-end;
-  padding-right: 50px;   /* 👈 perfect distance */
+  padding-right: 40px;
 }
 
 .right-content {
   display: flex;
   justify-content: flex-start;
-  padding-left: 50px;    /* 👈 perfect distance */
+  padding-left: 40px;
 }
 
-/* ===== TEXT ===== */
+/* text */
 .content h3 {
-  margin-bottom: 6px;
-  font-size: 16px;
+  font-size: 15px;
+  margin-bottom: 5px;
 }
 
 .content h4 {
-  font-size: 14px;
+  font-size: 13px;
   color: #555;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
-.content p {
-  font-size: 13px;
-  margin: 4px 0;
-  line-height: 1.5;
+.content ul {
+  padding-left: 15px;
+  margin: 8px 0;
+}
+
+.content li {
+  font-size: 12.5px;
+  margin-bottom: 4px;
 }
 
 .content span {
-  font-size: 13px;
+  font-size: 12.5px;
   color: #444;
 }
-
   /* ===== CONTACT SECTION ===== */
 #contact {
   text-align: center;
@@ -892,13 +896,14 @@ section {
           <h4>Construction Finance Platform</h4>
           <span>Domain: Banking / Real Estate | Web Application</span>
 
-          <p>Ensured quality of construction finance platform through manual and automation testing</p>
-          <p>Developed automation scripts using Selenium WebDriver with Java</p>
-          <p>Handled dynamic web elements using XPath and CSS selectors</p>
-          <p>Validated loan processing, fund disbursement and reporting modules</p>
-          <p>Performed API testing using Postman</p>
-          <p>Tracked and managed defects using JIRA</p>
-          <p>Worked in Agile Scrum environment</p>
+          <ul>
+            <li>Manual & automation testing</li>
+            <li>Selenium WebDriver with Java</li>
+            <li>XPath & CSS selectors handling</li>
+            <li>Loan processing & reporting validation</li>
+            <li>API testing using Postman</li>
+            <li>Defect tracking using JIRA</li>
+          </ul>
 
           <span><b>Tools:</b> Selenium, Java, TestNG, Postman, JIRA</span>
         </div>
@@ -927,11 +932,13 @@ section {
           <h4>Auto Payment Integration</h4>
           <span>Domain: Telecom | Web + API</span>
 
-          <p>Validated payment gateway integration for secure transactions</p>
-          <p>Tested real-time payment processing and billing workflows</p>
-          <p>Performed API validation for transaction accuracy</p>
-          <p>Created regression test cases using Selenium and TestNG</p>
-          <p>Verified payment success and failure scenarios</p>
+          <ul>
+            <li>Payment gateway validation</li>
+            <li>Real-time transaction testing</li>
+            <li>API validation</li>
+            <li>Regression testing (Selenium + TestNG)</li>
+            <li>Success & failure scenario validation</li>
+          </ul>
 
           <span><b>Tools:</b> Selenium, Java, TestNG, Postman, JIRA</span>
         </div>
@@ -946,11 +953,12 @@ section {
           <h4>Global Banking Platform</h4>
           <span>Domain: Banking | Web Application</span>
 
-          <p>Tested banking operations including account updates and customer data management</p>
-          <p>Performed API testing for microservices validation</p>
-          <p>Executed functional and regression testing</p>
-          <p>Designed and executed test cases</p>
-          <p>Logged and tracked defects in Agile environment</p>
+          <ul>
+            <li>Functional & regression testing</li>
+            <li>API testing (microservices)</li>
+            <li>Test case design & execution</li>
+            <li>Defect tracking in Agile</li>
+          </ul>
 
           <span><b>Tools:</b> Postman, JIRA, Zephyr</span>
         </div>
@@ -979,11 +987,12 @@ section {
           <h4>Assessment Lab</h4>
           <span>Domain: EdTech | Web Application</span>
 
-          <p>Validated online examination system functionality and performance</p>
-          <p>Tested login, exam flow and result generation</p>
-          <p>Performed cross-browser testing</p>
-          <p>Ensured data security and exam integrity</p>
-          <p>Designed and executed test cases</p>
+          <ul>
+            <li>Exam system validation</li>
+            <li>Login & result flow testing</li>
+            <li>Cross-browser testing</li>
+            <li>Data security validation</li>
+          </ul>
 
           <span><b>Tools:</b> Postman, JIRA, Azure DevOps</span>
         </div>
