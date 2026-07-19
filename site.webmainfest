@@ -1,0 +1,17 @@
+{
+  "name": "Bharti Basumatary Portfolio",
+  "short_name": "Bharti Portfolio",
+  "description": "Premium recruiter-friendly portfolio for Bharti Basumatary, QA Automation Engineer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08101f",
+  "theme_color": "#0b1020",
+  "icons": [
+    {
+      "src": "assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
